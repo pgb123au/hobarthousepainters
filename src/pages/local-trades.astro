@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my Hobart home likely to have lead paint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If it was built before 1970, almost certainly. The vast majority of pre-1970 Australian homes contain lead paint, often at high concentrations, and lead content was only limited to 1% by 1970. A lot of Sandy Bay, Battery Point and New Town stock predates that. AS/NZS 4361.2 is the guide to lead-paint management, and the safe rule for any pre-1997 home is to assume the paint is leaded and prepare it accordingly — no dry sanding that spreads lead dust, proper containment and clean-up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit to repaint a heritage home in Hobart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A like-for-like repaint in existing colours generally doesn't. But if your property is in a City of Hobart heritage precinct or listed on the Tasmanian Heritage Register, changing the colour or scheme can trigger a planning requirement, and works on a listed place may be referred to the Heritage Council. Check with City of Hobart planning before changing a heritage scheme — the links below are the right starting points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What workmanship standard should a painter follow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AS/NZS 2311 (Guide to the painting of buildings) is the reference for good painting practice in Australia — surface preparation, coating systems, application and the conditions paint should and shouldn't be applied in. A reputable painter prepares and applies to AS/NZS 2311, follows AS/NZS 4361.2 for lead, and works to WorkSafe Tasmania requirements at height."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I dispose of old paint and paint waste?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't tip it down the drain or into the bin. Leftover paint, washout and lead-paint debris should go to an appropriate collection or disposal point — the EPA Tasmania has guidance on household and trade waste, and Detox Your Home / drop-off programs accept paint. We collect and dispose of paint waste from our jobs to the proper requirements, and handle lead-paint debris with extra care."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Hobart House Painting Resources | Lead Paint, Heritage, Standards"
+  description="Useful Hobart house painting references — WorkSafe Tasmania height safety, AS/NZS 4361.2 lead paint, City of Hobart heritage planning, AS/NZS 2311 workmanship and EPA Tasmania paint disposal."
+  canonical="https://hobarthousepainters.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Useful references for Hobart homeowners</span>
+      <h1>Hobart house painting <span class="accent">resources &amp; standards</span>.</h1>
+      <p class="hero-sub">
+        A good paint job in Hobart sits on top of a few important things &mdash;
+        lead-paint safety on older homes, heritage planning rules, the
+        workmanship standard, working safely at height, and disposing of paint
+        waste properly. Here are the authoritative references every Sandy Bay,
+        New Town, Glenorchy and Kingston homeowner should know about, and how we
+        work to them.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Standards &amp; authorities</span>
+      <h2>The references that matter for Hobart house painting.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.9rem;">
+            <strong>WorkSafe Tasmania &mdash; working at heights &amp; scaffolding</strong>
+            &mdash; the regulator for safe work at height in Tasmania. Exterior
+            and roof painting is height work; scaffolding from which a person
+            could fall more than four metres is high-risk work. We follow these
+            fall-protection requirements on every job.
+            <a href="https://worksafe.tas.gov.au/" target="_blank" rel="external noopener">worksafe.tas.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            <strong>AS/NZS 4361.2 &mdash; guide to hazardous paint (lead) management</strong>
+            &mdash; the Australian/New Zealand Standard for managing lead paint in
+            existing buildings. The safe rule for any pre-1997 home is to assume
+            the paint is leaded and prepare it lead-safe. Available from Standards
+            Australia.
+            <a href="https://www.standards.org.au/" target="_blank" rel="external noopener">standards.org.au</a>
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            <strong>The LEAD Group &mdash; lead-safe painting &amp; renovation</strong>
+            &mdash; a long-standing not-for-profit with plain-English guidance on
+            testing for lead paint and managing it safely when you renovate or
+            repaint an older home. A useful homeowner reference alongside the
+            standard.
+            <a href="https://www.lead.org.au/" target="_blank" rel="external noopener">lead.org.au</a>
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            <strong>City of Hobart &mdash; heritage places &amp; precincts</strong>
+            &mdash; whether your home is in a heritage precinct, and what changes
+            (including colour schemes) may need planning approval. Start here
+            before changing a heritage colour scheme in Sandy Bay, Battery Point
+            or New Town.
+            <a href="https://www.hobartcity.com.au/Development/Planning/Heritage-places-and-precincts" target="_blank" rel="external noopener">hobartcity.com.au &mdash; heritage</a>
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            <strong>AS/NZS 2311 &mdash; guide to the painting of buildings</strong>
+            &mdash; the reference for good painting practice: surface
+            preparation, coating systems, application, and the conditions paint
+            should and shouldn&rsquo;t be applied in. We prepare and apply to this
+            standard. Available from Standards Australia.
+            <a href="https://www.standards.org.au/" target="_blank" rel="external noopener">standards.org.au</a>
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            <strong>EPA Tasmania &mdash; paint &amp; waste disposal</strong>
+            &mdash; guidance on disposing of paint, washout and trade waste
+            responsibly. We collect and dispose of paint waste from our jobs to
+            the proper requirements, with extra care for lead-paint debris.
+            <a href="https://epa.tas.gov.au/" target="_blank" rel="external noopener">epa.tas.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.9rem;">
+            <strong>Master Painters Australia</strong>
+            &mdash; the national industry body for professional painters, with
+            consumer guidance on choosing a painter and what good practice looks
+            like.
+            <a href="https://www.masterpainters.com.au/" target="_blank" rel="external noopener">masterpainters.com.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">How we work to them</span>
+      <h2>What these standards mean for your job.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Lead-safe on pre-1970 homes.</h3>
+        <p>
+          On older Hobart homes we assume lead paint and prepare to AS/NZS 4361.2
+          &mdash; no dry sanding or power-stripping that throws lead dust around,
+          proper containment, and clean collection and disposal of debris.
+          It&rsquo;s the right thing for your family and our crew. See our
+          <a href="/services/heritage-painting/">heritage &amp; weatherboard
+          painting</a> service.
+        </p>
+        <h3 style="margin-top:1.5rem;">Heritage-sympathetic work.</h3>
+        <p>
+          In heritage precincts we keep work sympathetic to the property and flag
+          when a colour change may need a check with City of Hobart planning. A
+          like-for-like repaint is usually straightforward.
+        </p>
+        <h3 style="margin-top:1.5rem;">Workmanship and weather.</h3>
+        <p>
+          We prepare and apply to AS/NZS 2311 &mdash; correct prep, the right
+          number of coats, and never coating onto damp surfaces or ahead of rain.
+          In Hobart&rsquo;s cool, damp climate that timing discipline is half the
+          job. See <a href="/services/exterior-painting/">exterior house
+          painting</a>.
+        </p>
+        <h3 style="margin-top:1.5rem;">Safe at height.</h3>
+        <p>
+          Scaffold or an EWP and proper fall protection on double-storey and roof
+          work, to WorkSafe Tasmania requirements &mdash; safer, and a better
+          finish up top. We paint right across
+          <a href="/hobart-region/">Greater Hobart</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--c-navy);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; honest Hobart house painting.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Interior, exterior, roof, heritage and commercial. Proper preparation,
+        lead-safe on older homes, low-VOC paints, and a fixed itemised quote.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

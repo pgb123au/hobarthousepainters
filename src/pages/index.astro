@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to paint a house in Hobart in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typical 2026 Hobart bands. Interior repaint: a single room $300–$750, a standard 3-bedroom interior (walls, ceilings, doors, skirting, architraves) $4,500–$9,000 depending on ceiling height and surface condition. Exterior: a single-storey 3-bedroom home $9,000–$16,000, a double-storey or weatherboard home $12,000–$20,000+ once you account for scaffold and the heavy preparation weatherboard needs. Roof painting: metal roof $20–$30/m², tile roof $25–$35/m², most Hobart roofs $2,500–$8,000. On a weatherboard repaint, expect roughly 75–85% of the cost to be preparation, application and clean-up — the paint itself is a small part. Every quote is fixed and itemised after we see the property." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does paint fail faster in Hobart than on the mainland?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hobart's cold, damp maritime climate is hard on paint. Long cool wet stretches keep timber and render damp, which feeds mould and mildew and lifts coatings off poorly-prepared surfaces. Salt air rolling off the Derwent adds another corrosion load on exterior work and metal roofs. The result is a shorter repaint cycle than the warm dry mainland — most Hobart exteriors need recoating every 7–10 years, sooner on exposed weatherboard. The defence is preparation: thorough wash, mould treatment, sanding, filling, priming bare timber, and using paints rated for cool damp conditions. Cutting prep to save money is the single biggest reason a Hobart paint job fails early." }
+    },
+    {
+      "@type": "Question",
+      "name": "My home is pre-1970 — do I need to worry about lead paint?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The vast majority of Australian homes built before 1970 contain lead paint, often at high concentrations, and lead in paint was only limited to 1% by 1970. Plenty of Sandy Bay, Battery Point and New Town homes fall into this bracket. Under AS 4361.2 (the guide to lead-paint management) the safe approach is to assume paint on a pre-1997 home is leaded and handle it accordingly: no dry sanding or dry power-tool stripping that throws lead dust around, proper containment and dust capture, drop sheets, and lead-safe clean-up. We're trained in lead-safe practice and prep heritage and pre-1970 homes the right way so your family and the painters aren't exposed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need council approval to paint a heritage home in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends. A like-for-like repaint in existing colours usually doesn't need a permit. But if your property is within a City of Hobart heritage precinct or listed on the Tasmanian Heritage Register, a change of colour or scheme can trigger a planning requirement, and works on a listed place may be referred to the Heritage Council. New Town, Battery Point and parts of Sandy Bay have heritage-sensitive areas. We'll flag whether your job is straightforward or whether you should check with the City of Hobart planning team before we lift a brush — and we paint sympathetically to the period either way." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Hobart house paint job take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An average interior repaint of a 3-bedroom home runs 3–6 working days. An exterior weatherboard repaint runs 7–12 working days, with a large share of that on preparation — sanding, filling, priming bare timber — before any topcoat goes on. Roof painting is usually 1–3 days. Weather is the variable: we don't apply exterior coatings onto damp surfaces or when rain is coming, so a wet Hobart week can stretch the timeline. We schedule around the forecast and keep you posted, and we don't rush prep to hit a date — a properly prepped job lasts years longer." }
+    }
+  ]
+};
+---
+<Layout
+  title="House Painters Hobart | Interior, Exterior & Heritage"
+  description="Hobart house painters — interior, exterior, roof, heritage & weatherboard, commercial & strata. Cold-climate prep done right, low-VOC paints, AS/NZS 2311 workmanship. Free quote across Greater Hobart."
+  canonical="https://hobarthousepainters.com.au/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Sandy Bay &middot; Glenorchy &middot; Kingston &middot; Moonah &middot; New Town</span>
+      <h1>House painters in Hobart &mdash; <span class="accent">interior, exterior &amp; heritage</span>.</h1>
+      <p class="hero-sub">
+        Interior repaints, weatherboard and render exteriors, roof coating,
+        conservation-sensitive heritage work and commercial &amp; strata painting
+        across Greater Hobart. We prep properly for the cold, damp maritime
+        climate, use low-VOC paints, and work to AS/NZS 2311. Honest fixed
+        quotes &mdash; no surprises.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>AS/NZS 2311</strong>Painting of buildings</div>
+        <div><strong>AS 4361.2</strong>Lead-safe on pre-1970 homes</div>
+        <div><strong>Low-VOC</strong>Healthier interior paints</div>
+        <div><strong>Heritage</strong>Weatherboard &amp; Georgian</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five painting services.</h2>
+      <p class="section-lead">
+        From a single feature wall through to a full heritage weatherboard
+        exterior, a strata block or a roof recoat. One local team, proper
+        preparation, low-VOC paints, and a fixed price you can plan around.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/interior-painting/">
+          <div class="svc-icon" aria-hidden="true">&#9632;</div>
+          <h3>Interior house painting</h3>
+          <p>Walls, ceilings, trim and doors. Low-VOC paints, neat cut-ins, full prep and protection of your floors and furniture. Tidy, on-time, low-disruption.</p>
+          <span class="svc-link">See interior painting &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/exterior-painting/">
+          <div class="svc-icon" aria-hidden="true">&#9633;</div>
+          <h3>Exterior house painting</h3>
+          <p>Weatherboard, render and brick. Wash, mould treatment, sand, fill, prime and recoat &mdash; built to handle Hobart's cold, damp maritime weather.</p>
+          <span class="svc-link">See exterior painting &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/roof-painting/">
+          <div class="svc-icon" aria-hidden="true">&#9650;</div>
+          <h3>Roof painting &amp; coating</h3>
+          <p>Metal and tile roofs cleaned, primed and membrane-coated to restore colour and protect against southern weather and salt air off the Derwent.</p>
+          <span class="svc-link">See roof painting &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/heritage-painting/">
+          <div class="svc-icon" aria-hidden="true">&#9670;</div>
+          <h3>Heritage &amp; weatherboard</h3>
+          <p>Conservation-sensitive repaints of Federation and Georgian homes with correct preparation and AS 4361.2 lead-paint management on pre-1970 stock.</p>
+          <span class="svc-link">See heritage painting &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/commercial-painting/">
+          <div class="svc-icon" aria-hidden="true">&#9744;</div>
+          <h3>Commercial &amp; strata</h3>
+          <p>Shopfronts, offices and body-corporate exteriors. Low-disruption scheduling, access management and after-hours work where it keeps you trading.</p>
+          <span class="svc-link">See commercial painting &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Hobart specialist</span>
+      <h2>Three things a Hobart paint job has to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Preparation beats everything &mdash; especially here.</h3>
+          <p>
+            On a Hobart exterior, the topcoat is the easy part. The job that
+            lasts is in the preparation: a proper wash to strip dirt and salt,
+            mould and mildew treatment, sanding back failed coatings, filling
+            and re-puttying, and priming every patch of bare timber before a
+            drop of finish goes on. On a weatherboard repaint, the bulk of the
+            days on site &mdash; often seven of ten &mdash; are preparation. We
+            don&rsquo;t cut that corner, because skipped prep is the number-one
+            reason a paint job in this climate peels inside a couple of winters.
+          </p>
+        </div>
+        <div>
+          <h3>The cold, damp maritime climate is unforgiving.</h3>
+          <p>
+            Hobart&rsquo;s long cool wet stretches keep timber and render damp,
+            which feeds mould and lifts paint, while salt air off the Derwent
+            adds a corrosion load most mainland cities never deal with. That
+            shortens the repaint cycle &mdash; most Hobart exteriors want a
+            recoat every <strong>7&ndash;10 years</strong>, sooner on exposed
+            southern and waterfront elevations. We use paints rated for cool,
+            damp conditions, never coat onto damp surfaces or ahead of rain, and
+            schedule around the forecast so the finish actually cures.
+          </p>
+        </div>
+        <div>
+          <h3>Heritage and weatherboard stock needs the right hands.</h3>
+          <p>
+            Sandy Bay, Battery Point and New Town are full of Federation,
+            Georgian and weatherboard homes &mdash; a lot of it pre-1970 and
+            very likely carrying <strong>lead paint</strong>. That changes how
+            you prepare: no dry sanding that throws lead dust around, proper
+            containment and lead-safe clean-up under AS 4361.2. Heritage colour
+            schemes and a change of colour can also touch City of Hobart
+            heritage-precinct rules. We prep these homes the safe way and paint
+            sympathetically to the period.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we paint.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Across Greater Hobart &mdash; the inner suburbs, the northern suburbs,
+        Kingborough to the south and the eastern shore. Free, no-obligation
+        quotes most weeks.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/sandy-bay/">Sandy Bay</a>
+        <a class="area-pill" href="/glenorchy/">Glenorchy</a>
+        <a class="area-pill" href="/kingston/">Kingston</a>
+        <a class="area-pill" href="/moonah/">Moonah</a>
+        <a class="area-pill" href="/new-town/">New Town</a>
+        <a class="area-pill" href="/hobart-region/">Greater Hobart</a>
+        <span class="area-pill area-pill-static">Bellerive</span>
+        <span class="area-pill area-pill-static">Battery Point</span>
+        <span class="area-pill area-pill-static">Lindisfarne</span>
+        <span class="area-pill area-pill-static">Lenah Valley</span>
+        <span class="area-pill area-pill-static">North Hobart</span>
+        <span class="area-pill area-pill-static">South Hobart</span>
+        <span class="area-pill area-pill-static">West Hobart</span>
+        <span class="area-pill area-pill-static">Bellerive</span>
+        <span class="area-pill area-pill-static">Howrah</span>
+        <span class="area-pill area-pill-static">Claremont</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From quote to clean finish &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free quote</h3><p>We visit, look at surface condition, access and prep needs, and give you a fixed, itemised quote &mdash; not a vague per-hour guess.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Preparation</h3><p>Wash, mould treatment, scrape and sand failed coatings, fill and putty, prime bare timber and patches. The part that makes it last.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Protection</h3><p>Floors, furniture, fixtures, gardens and paths masked and covered. Lead-safe containment on pre-1970 homes under AS 4361.2.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Painting</h3><p>Quality low-VOC paints applied to AS/NZS 2311 &mdash; correct number of coats, neat cut-ins, even coverage. Never onto damp surfaces.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Clean &amp; check</h3><p>Full clean-up, rubbish removed, and a walk-round with you to sign off every surface before we call it done.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a fresh coat?</h2>
+        <p>Interior, exterior, roof, heritage or commercial. Honest fixed quote, proper prep, tidy finish across Greater Hobart.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Get a Painting Quote | Hobart House Painters"
+  description="Get a free house painting quote in Hobart — interior, exterior, roof, heritage or commercial. Fixed, itemised quotes across Greater Hobart. We reply within 1 business day."
+  canonical="https://hobarthousepainters.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Get A Quote</span>
+      <h1>Get your free painting quote.</h1>
+      <p class="hero-sub">
+        Tell us about the job &mdash; interior, exterior, roof, heritage or
+        commercial &mdash; and we&rsquo;ll come and look, then give you a fixed,
+        itemised quote you can plan around. Free, no obligation, and we reply
+        within 1 business day across Greater Hobart.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Sandy Bay 7005, Glenorchy 7010, Kingston 7050" />
+
+            <label for="service-type">What do you need painted?</label>
+            <select id="service-type" name="service-type">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="interior">Interior painting (walls, ceilings, trim)</option>
+              <option value="exterior">Exterior painting (weatherboard, render, brick)</option>
+              <option value="roof">Roof painting / coating</option>
+              <option value="heritage">Heritage / weatherboard (period home)</option>
+              <option value="commercial">Commercial / shopfront / office</option>
+              <option value="strata">Strata / body-corporate exterior</option>
+              <option value="interior-exterior">Interior &amp; exterior together</option>
+              <option value="new-build">New build / renovation paint-out</option>
+            </select>
+
+            <label for="property-type">Property type</label>
+            <select id="property-type" name="property-type">
+              <option value="house">Free-standing house</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="unit">Apartment / unit</option>
+              <option value="commercial">Commercial / business</option>
+              <option value="strata">Strata / body-corporate complex</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="age">Approximate age of the home</label>
+            <select id="age" name="age">
+              <option value="not-sure">Not sure</option>
+              <option value="pre-1970">Pre-1970 (likely heritage / lead paint)</option>
+              <option value="1970-2000">1970&ndash;2000</option>
+              <option value="2000-2015">2000&ndash;2015</option>
+              <option value="2015-plus">Post-2015 (modern)</option>
+              <option value="new-build">New build / under construction</option>
+            </select>
+
+            <label for="storeys">Single or double storey?</label>
+            <select id="storeys" name="storeys">
+              <option value="single">Single storey</option>
+              <option value="double">Double storey</option>
+              <option value="three-plus">Three or more storeys</option>
+              <option value="na">Not applicable / interior only</option>
+            </select>
+
+            <label for="timing">Timing</label>
+            <select id="timing" name="timing">
+              <option value="asap">As soon as possible</option>
+              <option value="few-weeks">Within a few weeks</option>
+              <option value="few-months">Within a few months</option>
+              <option value="planning">Just planning / budgeting</option>
+              <option value="quote-only">Quote only, no rush</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Rooms or elevations to paint, current condition (peeling, mould, bare timber), colour ideas, heritage listing, access notes, deadline, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation. Calls answered Mon&ndash;Sat 7am&ndash;5pm.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;5pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Greater Hobart &mdash; Sandy Bay, Glenorchy, Kingston, Moonah, New Town, the eastern shore and beyond.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>A free on-site assessment</li>
+                <li>A fixed, itemised written quote</li>
+                <li>Honest advice on prep and what the job actually needs</li>
+                <li>Low-VOC paints and AS/NZS 2311 workmanship</li>
+                <li>Lead-safe practice on pre-1970 homes (AS 4361.2)</li>
+                <li>A clean, tidy site and a final walk-round</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

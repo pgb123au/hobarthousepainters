@@ -1,0 +1,254 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: string;
+}
+
+const SITE = 'https://hobarthousepainters.com.au';
+const PHONE_DISPLAY = '';
+const PHONE_TEL = '+61485939966';
+const EMAIL = 'quotes@hobarthousepainters.com.au';
+const BIZ_NAME = 'Hobart House Painters';
+
+const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "@id": SITE + "/#business",
+  "name": BIZ_NAME,
+  "image": SITE + "/images/og-image.jpg",
+  "url": SITE,
+  "priceRange": "$$",
+  "description": "Interior and exterior house painters serving Greater Hobart. Heritage and weatherboard specialists working with Hobart's cold, damp maritime climate. Interior repaints, exterior weatherboard and render, roof painting, conservation-sensitive heritage repaints with AS 4361.2 lead-paint management, and commercial and strata painting. AS/NZS 2311 workmanship, low-VOC paints.",
+  "areaServed": [
+    { "@type": "City", "name": "Hobart", "containedInPlace": { "@type": "AdministrativeArea", "name": "Greater Hobart" } },
+    { "@type": "City", "name": "Sandy Bay" },
+    { "@type": "City", "name": "Glenorchy" },
+    { "@type": "City", "name": "Kingston" },
+    { "@type": "City", "name": "Moonah" },
+    { "@type": "City", "name": "New Town" },
+    { "@type": "City", "name": "Bellerive" },
+    { "@type": "City", "name": "Battery Point" },
+    { "@type": "City", "name": "Lindisfarne" },
+    { "@type": "City", "name": "Lenah Valley" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hobart",
+    "addressRegion": "TAS",
+    "postalCode": "7000",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -42.8821,
+    "longitude": 147.3272
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "House Painting Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior House Painting" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior House Painting" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Painting & Coating" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heritage & Weatherboard Painting" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial & Strata Painting" }}
+    ]
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": SITE + "/#website",
+  "url": SITE + "/",
+  "name": BIZ_NAME,
+  "inLanguage": "en-AU",
+  "publisher": { "@id": SITE + "/#business" }
+};
+// BreadcrumbList JSON-LD auto-generated from Astro.url.pathname
+const pathname = Astro.url.pathname;
+const breadcrumbSegments = pathname.split('/').filter(Boolean);
+const breadcrumbItems = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/" }];
+let cumulative = SITE;
+breadcrumbSegments.forEach((seg, i) => {
+  cumulative += '/' + seg;
+  // Human-friendly name: kebab → Title Case, special-case 'services' → Services
+  const friendly = seg === 'services'
+    ? 'Services'
+    : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    "position": i + 2,
+    "name": friendly,
+    "item": cumulative + '/'
+  });
+});
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems
+};
+
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#1e293b">
+
+  <meta property="og:type" content={ogType}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:site_name" content={BIZ_NAME}>
+  <meta property="og:image" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:secure_url" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={SITE + "/images/og-image.jpg"}>
+  <meta name="twitter:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Playfair+Display:wght@900&family=Stardos+Stencil:wght@700&display=swap">
+
+  <!-- Google Search Console verification (DNS TXT primary; meta backup) -->
+  <meta name="google-site-verification" content="GSC-TOKEN-PLACEHOLDER">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'send_page_view': true,
+      'anonymize_ip': true
+    });
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <slot name="head" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>Interior &amp; exterior house painting &middot; Heritage &amp; weatherboard specialists &middot; Across Greater Hobart &middot; <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span></a></span>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/" aria-label="Hobart House Painters home">
+        <img src="/images/logo.svg" alt="Hobart House Painters" width="320" height="80" decoding="async">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/services/interior-painting/">Interior</a></li>
+        <li><a href="/services/exterior-painting/">Exterior</a></li>
+        <li><a href="/services/roof-painting/">Roof</a></li>
+        <li><a href="/services/heritage-painting/">Heritage</a></li>
+        <li><a href="/services/commercial-painting/">Commercial</a></li>
+        <li><a href="/hobart-region/">Areas</a></li>
+      </ul>
+      <a class="nav-cta" href="/quote/">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Hobart House Painters</h4>
+        <p style="margin-bottom: 0.75rem;">Interior and exterior house painters for Greater Hobart. Heritage and weatherboard specialists who prep properly for the cold, damp maritime climate &mdash; low-VOC paints, AS/NZS 2311 workmanship and AS 4361.2 lead-safe practice on pre-1970 homes.</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Phone:</strong> <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span></a></p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Hours:</strong> Mon&ndash;Sat 7am&ndash;5pm</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Service area:</strong> Greater Hobart &mdash; Sandy Bay to Kingston, the eastern shore included</p>
+        <p style="margin-bottom: 0;"><strong style="color:#fff;">ABN:</strong> 91 664 546 061</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/interior-painting/">Interior house painting</a></li>
+          <li><a href="/services/exterior-painting/">Exterior house painting</a></li>
+          <li><a href="/services/roof-painting/">Roof painting &amp; coating</a></li>
+          <li><a href="/services/heritage-painting/">Heritage &amp; weatherboard</a></li>
+          <li><a href="/services/commercial-painting/">Commercial &amp; strata</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/sandy-bay/">Sandy Bay</a></li>
+          <li><a href="/glenorchy/">Glenorchy</a></li>
+          <li><a href="/kingston/">Kingston</a></li>
+          <li><a href="/moonah/">Moonah</a></li>
+          <li><a href="/new-town/">New Town</a></li>
+          <li><a href="/hobart-region/">All Greater Hobart</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      &copy; {new Date().getFullYear()} {BIZ_NAME} &middot; Yes Right Pty Ltd ABN 91 664 546 061. Interior, exterior, roof, heritage &amp; commercial house painting across Greater Hobart.
+    </p>
+  </footer>
+
+  <a class="mobile-phone ph-cta" href="/quote/" aria-label="Call us">
+    <span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span>
+  </a>
+  <script is:inline>
+    (function(){
+      // 2026-05-23: phone assembled from non-contiguous fragments
+      // so no contiguous phone-number substring exists in static HTML.
+      // Google can index attributes & visible text; the .ph-cta links default to /quote/
+      // for no-JS users, and JS rewrites href to tel: + injects display text.
+      var p1 = 485, p2 = 939, p3 = 966;
+      var disp = '0' + p1 + ' ' + p2 + ' ' + p3;
+      var tel  = '+61' + p1 + p2 + p3;
+      document.querySelectorAll('.ph-cta').forEach(function(el){
+        el.setAttribute('href', 'tel:' + tel);
+        el.setAttribute('aria-label', 'Call ' + disp);
+        var t = el.querySelector('.ph-text');
+        if (t) t.textContent = ' ' + disp;
+      });
+    })();
+  </script>
+</body>
+</html>

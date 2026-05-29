@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does roof painting cost in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide, metal roofs run about $20–$30 per square metre and tile roofs $25–$35 per square metre (tiles need a primer/sealer first, which lifts the price). Most Hobart residential roofs land between $2,500 and $8,000 for a clean, prime and full coating system, while a more involved restoration with extensive repairs and repointing can run higher. Pitch, access, condition, rust treatment and the number of broken tiles or rusted sheets all affect the figure. We quote a fixed price after inspecting the roof." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is roof painting just cosmetic, or does it protect the roof?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both, when it's done properly. A correct system — clean, repair, prime/seal, then a quality membrane coating — restores colour and also seals porous tiles, ties down surface dust, and adds a protective film against Hobart's damp weather and the salt air off the Derwent. On metal roofs, treating rust before coating stops it spreading. It's not a substitute for replacing a failed roof, but on a sound roof it extends life and lifts the look of the whole house." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you paint a Colorbond or metal roof?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Faded or chalking Colorbond and other metal roofs can be recoated once they're properly cleaned and any rust is treated and primed. Metal is the most affordable roof type to coat per square metre. We use coating systems made for metal roofing and pay particular attention to rust spots, fixings and flashings — on Hobart's salt-exposed and southern roofs, the rust treatment is the part that makes the recoat last." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work safely on the roof?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — roof work is height work and we follow WorkSafe Tasmania fall-protection requirements, using harness anchors, edge protection, scaffold or an EWP as the roof and access demand. A safe set-up also means we can walk the whole roof to clean, repair and coat it properly rather than reaching from the edge. We never compromise access safety to shave a quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Roof Painting Hobart | Metal & Tile Coating, Restoration"
+  description="Roof painting and coating across Hobart — metal and tile roofs cleaned, repaired, primed and membrane-coated. Rust treatment, salt-air protection, WorkSafe Tasmania height safety. Free quote."
+  canonical="https://hobarthousepainters.com.au/services/roof-painting/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Metal &amp; tile &middot; clean, prime, coat &middot; salt-air protection</span>
+      <h1>Roof painting &amp; coating across <span class="accent">Hobart</span>.</h1>
+      <p class="hero-sub">
+        Metal and tile roofs cleaned, repaired, primed and membrane-coated to
+        restore colour and protect against southern weather and the salt air off
+        the Derwent. Metal roofs run roughly $20&ndash;$30/m², tile roofs
+        $25&ndash;$35/m², with most Hobart roofs landing between $2,500 and
+        $8,000. Rust treated, broken tiles replaced, done safely from a proper
+        set-up.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What roof painting actually involves.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>A coating system, not just a colour.</h3>
+        <p>
+          Roof painting done right is a multi-stage system, not one coat of
+          colour. On a sound roof it restores the look and adds a protective film
+          against the damp Hobart climate and salt air. On a roof that&rsquo;s
+          genuinely failed, a recoat isn&rsquo;t the answer &mdash; we&rsquo;ll
+          tell you straight if you need repairs or replacement rather than paint.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Our roof process.</h3>
+        <ol>
+          <li><strong>Inspect.</strong> Walk the roof, check tiles, sheets, ridge capping, flashings, fixings and rust. Confirm whether it&rsquo;s a candidate for coating.</li>
+          <li><strong>Clean.</strong> High-pressure wash to strip dirt, moss, lichen and chalking &mdash; the damp southern climate grows plenty of it on shaded pitches.</li>
+          <li><strong>Repair.</strong> Replace cracked or broken tiles, re-bed and re-point loose ridge capping, treat rust on metal roofs, refix and seal as needed.</li>
+          <li><strong>Prime / seal.</strong> Tiles get a primer/sealer to bind the surface; metal gets the appropriate primer over treated rust spots.</li>
+          <li><strong>Coat.</strong> Two coats of a quality roof membrane in your colour, applied evenly to the manufacturer&rsquo;s spec and AS/NZS 2311.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Metal vs tile in Hobart.</h3>
+        <ul>
+          <li><strong>Metal / Colorbond:</strong> the most affordable to coat per m² (~$20&ndash;$30/m²). The critical step here is rust treatment &mdash; on salt-exposed and southern roofs, untreated rust will keep spreading under a fresh coat.</li>
+          <li><strong>Concrete / terracotta tile:</strong> ~$25&ndash;$35/m² &mdash; needs a primer/sealer first because tiles are porous, plus replacement of any broken tiles and re-pointing of ridge capping.</li>
+          <li><strong>Full restoration:</strong> where there&rsquo;s significant repair, re-bedding and re-pointing on top of the coating, the job moves into restoration territory and is priced accordingly.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">2026 Hobart roof price bands.</h3>
+        <ul>
+          <li><strong>Metal roof coating:</strong> ~$20&ndash;$30/m².</li>
+          <li><strong>Tile roof painting:</strong> ~$25&ndash;$35/m² including primer/sealer.</li>
+          <li><strong>Typical residential roof (clean, prime, coat):</strong> $2,500&ndash;$8,000.</li>
+          <li><strong>Restoration with extensive repair / repointing:</strong> higher &mdash; quoted after inspection.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Height safety (WorkSafe Tasmania).</h3>
+        <p>
+          Roof work is height work. We follow <strong>WorkSafe Tasmania</strong>
+          fall-protection requirements &mdash; harness anchors, edge protection,
+          scaffold or an EWP as the roof and access demand. A safe set-up also
+          lets us reach and coat the whole roof properly. We never trade access
+          safety for a cheaper quote.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          A roof &ldquo;painted&rdquo; without cleaning, rust treatment or a
+          primer/sealer looks good for a season and then flakes and blisters as
+          the film lifts off dirt or porous tile. We do the unglamorous steps
+          &mdash; wash, repair, prime &mdash; because that&rsquo;s what makes the
+          coating bond and last.
+        </p>
+
+        <p style="margin-top: 1.5rem;">
+          Doing the walls at the same time makes sense &mdash; see
+          <a href="/services/exterior-painting/">exterior house painting</a>. We
+          also handle <a href="/services/commercial-painting/">commercial &amp;
+          strata</a> roofs and work across <a href="/hobart-region/">Greater
+          Hobart</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/sandy-bay/">Sandy Bay</a>
+        <a class="area-pill" href="/glenorchy/">Glenorchy</a>
+        <a class="area-pill" href="/kingston/">Kingston</a>
+        <a class="area-pill" href="/moonah/">Moonah</a>
+        <a class="area-pill" href="/new-town/">New Town</a>
+        <a class="area-pill" href="/hobart-region/">All Greater Hobart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a free roof painting quote.</h2>
+        <p>Metal or tile. Cleaned, repaired, primed and coated &mdash; rust treated, done safely, fixed price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,168 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if my Hobart home has lead paint?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Age is the best guide. The vast majority of Australian homes built before 1970 contain lead paint, often at high concentrations — lead content was only limited to 1% by 1970. Lots of Sandy Bay, Battery Point and New Town homes predate that. Under AS 4361.2 the safe rule is to assume paint on a pre-1997 home is leaded and treat it accordingly. We can also arrange dust-wipe or paint testing if you want it confirmed before work starts." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you paint over lead paint safely?",
+      "acceptedAnswer": { "@type": "Answer", "text": "By following AS 4361.2 lead-safe practice. That means no dry abrasive sanding or dry power-stripping that throws lead dust into the air and soil, proper containment and drop sheets, dust capture where surfaces must be abraded, and careful collection and disposal of debris — not just sweeping it into the garden. Painters doing this work should be trained in lead-paint management. Done properly, an old painted surface can be made sound and safely overcoated without exposing your family or the painters." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need council or heritage approval to repaint a heritage home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A like-for-like repaint in the existing colours generally doesn't need a permit. But if your home is in a City of Hobart heritage precinct or listed on the Tasmanian Heritage Register, changing the colour or scheme can trigger a planning requirement, and works on a listed place may be referred to the Heritage Council. New Town, Battery Point and parts of Sandy Bay have heritage-sensitive areas. We'll flag whether your job is straightforward or whether you should check with City of Hobart planning first." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match heritage colours and finishes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We paint sympathetically to the period — appropriate heritage colour schemes for Federation, Georgian and weatherboard homes, correct treatment of detailed trim, fascia, fretwork and window joinery, and finishes suited to old timber. Where a property is heritage-listed we keep changes sympathetic to its significance. If you want help choosing a period-correct scheme, we can talk through options at the quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Heritage & Weatherboard Painting Hobart | Lead-Safe"
+  description="Heritage and weatherboard house painting across Hobart — conservation-sensitive repaints of Federation and Georgian homes, AS 4361.2 lead-paint management on pre-1970 stock, period-correct schemes. Free quote."
+  canonical="https://hobarthousepainters.com.au/services/heritage-painting/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Federation &amp; Georgian &middot; weatherboard &middot; lead-safe</span>
+      <h1>Heritage &amp; weatherboard painting across <span class="accent">Hobart</span>.</h1>
+      <p class="hero-sub">
+        Hobart has some of Australia&rsquo;s finest heritage housing &mdash;
+        Federation, Georgian and weatherboard homes through Sandy Bay, Battery
+        Point and New Town. A lot of it predates 1970 and carries lead paint.
+        We repaint these homes the right way: AS 4361.2 lead-safe preparation,
+        conservation-sensitive technique, and period-correct colour schemes.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Painting heritage and weatherboard homes properly.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Lead paint &mdash; the thing most quotes ignore.</h3>
+        <p>
+          The vast majority of Australian homes built before 1970 contain
+          <strong>lead paint</strong>, often at high concentrations &mdash; lead
+          in paint was only limited to 1% by 1970. Plenty of Hobart&rsquo;s
+          heritage stock sits well before that line. Lead is a serious health
+          hazard, especially for children, and the dust created by sanding or
+          power-stripping old paint is how people get exposed. Under
+          <strong>AS 4361.2</strong> (the guide to lead-paint management) the
+          safe approach is to assume the paint on a pre-1997 home is leaded and
+          handle it accordingly.
+        </p>
+
+        <h3 style="margin-top: 2rem;">How we work lead-safe (AS 4361.2).</h3>
+        <ul>
+          <li><strong>No dry sanding or dry power-stripping</strong> that throws lead dust into the air, soil and your home.</li>
+          <li><strong>Containment and drop sheets</strong> to capture debris &mdash; not swept into the garden where kids and pets play.</li>
+          <li><strong>Dust capture</strong> where surfaces genuinely need abrading, using methods that don&rsquo;t spread lead.</li>
+          <li><strong>Careful collection and disposal</strong> of paint waste to the proper requirements.</li>
+          <li><strong>Trained painters</strong> &mdash; lead work is done by people who understand lead-paint management, not just whoever is cheapest.</li>
+        </ul>
+        <p>
+          Done properly, an old painted surface can be made sound and safely
+          overcoated without exposing your family or our crew. We can arrange
+          dust-wipe or paint testing first if you want it confirmed.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Conservation-sensitive technique.</h3>
+        <p>
+          Old timber, fretwork, fascia, decorative trim and original window
+          joinery need patience and the right finishes &mdash; not a quick spray
+          and run. We prepare carefully, repair and re-putty where needed, prime
+          bare timber, and use finishes suited to heritage substrates so the work
+          looks right and lasts. The goal is to keep a period home looking like a
+          period home.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Heritage precincts and approvals.</h3>
+        <p>
+          A like-for-like repaint in the existing colours usually doesn&rsquo;t
+          need approval. But if your property sits in a <strong>City of Hobart
+          heritage precinct</strong> or is listed on the <strong>Tasmanian
+          Heritage Register</strong>, a change of colour or scheme can trigger a
+          planning requirement, and works on a listed place may be referred to
+          the Heritage Council. New Town, Battery Point and parts of Sandy Bay
+          have heritage-sensitive areas. We&rsquo;ll flag whether your job is
+          straightforward or whether you should check with City of Hobart
+          planning before we start, and keep any work sympathetic to the
+          property&rsquo;s significance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Weatherboard &mdash; heavy on preparation.</h3>
+        <p>
+          Heritage weatherboard is almost all preparation: scraping failed
+          coatings (lead-safe), filling and re-puttying, treating or replacing
+          rotten boards, and priming bare timber before any topcoat. In
+          Hobart&rsquo;s damp climate, around <strong>seven of ten days</strong>
+          on a weatherboard repaint go on prep. It&rsquo;s why we never quote a
+          heritage exterior on a quick wash-and-two-coats basis &mdash; that
+          fails fast and, on a lead home, fails dangerously.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Period-correct colour.</h3>
+        <p>
+          We can paint to an appropriate heritage scheme &mdash; the right body,
+          trim and highlight colours for Federation, Georgian or weatherboard
+          homes &mdash; and talk through options at the quote if you want a hand
+          choosing. Done well, the right scheme lifts the whole street.
+        </p>
+
+        <p style="margin-top: 1.5rem;">
+          See also <a href="/services/exterior-painting/">exterior house
+          painting</a> and <a href="/services/interior-painting/">interior house
+          painting</a> &mdash; we look after heritage homes right across
+          <a href="/hobart-region/">Greater Hobart</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/sandy-bay/">Sandy Bay</a>
+        <a class="area-pill" href="/glenorchy/">Glenorchy</a>
+        <a class="area-pill" href="/kingston/">Kingston</a>
+        <a class="area-pill" href="/moonah/">Moonah</a>
+        <a class="area-pill" href="/new-town/">New Town</a>
+        <a class="area-pill" href="/hobart-region/">All Greater Hobart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a free heritage painting quote.</h2>
+        <p>Lead-safe preparation, conservation-sensitive finish, period-correct colour. Fixed price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

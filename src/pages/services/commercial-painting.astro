@@ -1,0 +1,158 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you paint our premises after hours so we keep trading?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. For shops, cafes, offices and tenanted buildings we schedule around your trading hours — early mornings, evenings, weekends or staged areas — so customers and staff aren't disrupted and you don't lose a day's trade. We agree the access and staging plan up front and stick to it. Low-VOC paints help here too, so a freshly painted office or retail space is back in use sooner with minimal odour." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do body-corporate and strata painting?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — common-property exteriors, unit blocks, townhouse complexes, stairwells, fences and shared structures. We work with committees and managing agents, provide a clear itemised quote and scope, coordinate access across multiple units, and schedule to minimise disruption to residents. Hobart's damp climate is hard on rendered and weatherboard strata exteriors, so proper prep and the right paints matter for a long maintenance cycle." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you handle access and safety on commercial jobs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We plan access before we start — scaffold or an EWP for height, edge protection, and public-area management so pedestrians and customers stay safe around the work. Height work follows WorkSafe Tasmania fall-protection requirements. For occupied premises we section off work areas, manage wet-paint zones, and keep walkways clear so your operation keeps running around us." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does commercial painting cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Commercial work is quoted per project rather than off a simple rate, because scope, access, surface condition, height, after-hours requirements and substrate vary so much between a single shopfront and a multi-unit strata block. We inspect, agree the scope, and give a fixed itemised quote. As a rough guide, exterior work generally sits in the $25–$60 per square metre range before access and out-of-hours factors. Ask us for a tailored quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Commercial & Strata Painting Hobart | Low-Disruption"
+  description="Commercial and strata painting across Hobart — shopfronts, offices, body-corporate exteriors. Low-disruption and after-hours scheduling, access management, WorkSafe Tasmania height safety. Free quote."
+  canonical="https://hobarthousepainters.com.au/services/commercial-painting/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Shopfronts &middot; offices &middot; body-corporate &middot; strata</span>
+      <h1>Commercial &amp; strata painting across <span class="accent">Hobart</span>.</h1>
+      <p class="hero-sub">
+        Shopfronts, offices, retail and hospitality fitouts, and body-corporate
+        exteriors painted with low-disruption scheduling and proper access
+        management. We work around your trading hours, coordinate access across
+        tenants, and prep for Hobart&rsquo;s damp maritime climate so the
+        maintenance cycle is a long one. Clear, fixed, itemised quotes.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Commercial and strata painting, done around your day.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What we paint.</h3>
+        <ul>
+          <li><strong>Shopfronts and retail</strong> &mdash; facades, signage surrounds, interiors, fitouts.</li>
+          <li><strong>Offices and workplaces</strong> &mdash; interior repaints, meeting rooms, common areas, low-VOC for fast re-occupancy.</li>
+          <li><strong>Hospitality</strong> &mdash; cafes, restaurants and bars, scheduled around service.</li>
+          <li><strong>Body-corporate &amp; strata</strong> &mdash; common-property exteriors, unit blocks, townhouse complexes, stairwells, fences and shared structures.</li>
+          <li><strong>Light industrial and warehouses</strong> &mdash; walls, structural steel, line-marking on request.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Low-disruption scheduling.</h3>
+        <p>
+          Repainting a working premises is as much about logistics as paint. We
+          schedule around your trading &mdash; early mornings, evenings, weekends
+          or staged areas &mdash; so you don&rsquo;t lose a day&rsquo;s trade and
+          customers aren&rsquo;t walking through a worksite. The access and
+          staging plan is agreed up front and we stick to it. Low-VOC paints mean
+          a repainted office or shop is back in use sooner with minimal odour.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Working with committees and managing agents.</h3>
+        <p>
+          For body-corporate and strata work we provide a clear itemised quote
+          and scope the committee can actually read, coordinate access across
+          multiple units, and schedule to keep disruption to residents to a
+          minimum. Hobart&rsquo;s damp climate is hard on rendered and
+          weatherboard strata exteriors, so we prep properly &mdash; wash, mould
+          treatment, sand, prime &mdash; and use the right paints to stretch the
+          maintenance cycle and the committee&rsquo;s budget.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Access and safety (WorkSafe Tasmania).</h3>
+        <p>
+          We plan access before we start &mdash; scaffold or an EWP for height,
+          edge protection, and public-area management so pedestrians and
+          customers stay safe around the work. Height work follows
+          <strong>WorkSafe Tasmania</strong> fall-protection requirements. On
+          occupied premises we section off work areas, manage wet-paint zones and
+          keep walkways clear so your operation keeps running around us.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <p>
+          Commercial work is quoted per project, because scope, access, height,
+          surface condition, after-hours needs and substrate vary widely between
+          a single shopfront and a multi-unit block. As a rough guide, exterior
+          work generally sits in the <strong>$25&ndash;$60 per square metre</strong>
+          range before access and out-of-hours factors. We inspect, agree the
+          scope, and give you a fixed itemised quote &mdash; no vague hourly
+          guesses.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          On a commercial or strata exterior, prep is what protects the
+          committee&rsquo;s or owner&rsquo;s spend. A cheap repaint over chalking
+          render or flaking weatherboard fails inside a couple of damp Hobart
+          winters and you&rsquo;re paying twice. We&rsquo;d rather quote the prep
+          honestly and deliver a finish that holds.
+        </p>
+
+        <p style="margin-top: 1.5rem;">
+          See also <a href="/services/exterior-painting/">exterior house
+          painting</a>, <a href="/services/roof-painting/">roof painting &amp;
+          coating</a>, and our coverage across
+          <a href="/hobart-region/">Greater Hobart</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/sandy-bay/">Sandy Bay</a>
+        <a class="area-pill" href="/glenorchy/">Glenorchy</a>
+        <a class="area-pill" href="/kingston/">Kingston</a>
+        <a class="area-pill" href="/moonah/">Moonah</a>
+        <a class="area-pill" href="/new-town/">New Town</a>
+        <a class="area-pill" href="/hobart-region/">All Greater Hobart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a free commercial painting quote.</h2>
+        <p>Shopfront, office or strata block. Scheduled around your trading, access managed, fixed itemised price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,154 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does interior painting cost in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide, a single room runs $300–$750 and interior work is often around $30 per square metre for straightforward jobs. A full 3-bedroom interior — walls, ceilings, doors, skirting and architraves — typically lands at $4,500–$9,000 depending on ceiling height, how many coats the surfaces need, and the paint finish. High ceilings, heavy patching, dark-to-light colour changes and detailed trim push it up. We give a fixed itemised quote after seeing the rooms." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use low-VOC interior paints?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, as standard. Low-VOC (volatile organic compound) paints have far less odour and off-gassing, which matters for interiors where you're living in the space — especially for kids, asthma and anyone sensitive to fumes. Most quality water-based interior ranges are now low- or zero-VOC and we use them by default. In a cool, often closed-up Hobart winter home, lower fumes and faster re-occupancy make a real difference." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will you move furniture and protect my floors?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We move and centre furniture, cover it, mask floors, fixtures, power points and skirting, and protect carpet and timber floors before any paint is opened. In an older Hobart home with original floorboards or pre-1970 paint, careful protection and lead-safe clean-up matter even more. We leave the room clean and put back at the end." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will my interior repaint take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An average 3-bedroom interior repaint takes 3–6 working days, depending on the number of rooms, how much patching and prep the walls need, and how many coats. A single room or feature wall can be a day. We'll give you a realistic schedule with the quote and keep disruption to a minimum — we can stage rooms so you keep using the home throughout." }
+    }
+  ]
+};
+---
+<Layout
+  title="Interior House Painting Hobart | Low-VOC, Neat Finish"
+  description="Interior house painting across Hobart — walls, ceilings, doors and trim. Low-VOC paints, full prep and floor protection, AS/NZS 2311 workmanship. Free fixed quote."
+  canonical="https://hobarthousepainters.com.au/services/interior-painting/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Walls &middot; ceilings &middot; doors &middot; trim &middot; low-VOC</span>
+      <h1>Interior house painting across <span class="accent">Hobart</span>.</h1>
+      <p class="hero-sub">
+        Walls, ceilings, doors, skirtings and architraves repainted with quality
+        low-VOC paints and a genuinely neat finish. Full preparation, careful
+        protection of your floors and furniture, and a tidy clean-up. A single
+        room runs roughly $300&ndash;$750; a full 3-bedroom interior typically
+        $4,500&ndash;$9,000 depending on ceilings, condition and finish.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What an interior repaint includes.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What we paint.</h3>
+        <p>
+          A full interior covers walls and ceilings, plus doors, door frames,
+          window reveals, skirting boards and architraves &mdash; the trim is
+          what lifts a repaint from &ldquo;rolled the walls&rdquo; to a finished
+          room. We also do feature walls, single rooms, hallways and stairwells,
+          built-in joinery and cornices. Tell us the scope and we&rsquo;ll quote
+          exactly what&rsquo;s in and what&rsquo;s out, in writing.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Our interior process.</h3>
+        <ol>
+          <li><strong>Protect the space.</strong> Furniture moved and covered, floors and carpet masked, power points and fixtures protected, doors off where needed.</li>
+          <li><strong>Prepare surfaces.</strong> Fill cracks, dents and nail holes, sand back, spot-prime patches and any bare or stained areas, sand again for a smooth base. Seal water stains so they don&rsquo;t bleed through.</li>
+          <li><strong>Cut in and coat.</strong> Neat brush cut-ins at ceilings, corners and trim, then even roller coats &mdash; the correct number for the colour and surface, applied to AS/NZS 2311.</li>
+          <li><strong>Trim and detail.</strong> Doors, frames, skirtings and architraves brushed or sprayed for a smooth, hard-wearing finish.</li>
+          <li><strong>Clean and sign off.</strong> Full clean-up, furniture back, and a walk-round with you to check every surface.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">2026 Hobart interior price bands.</h3>
+        <ul>
+          <li><strong>Single room (3 x 3.5m):</strong> $300&ndash;$750 depending on ceiling height, condition and trim.</li>
+          <li><strong>Per square metre (straightforward work):</strong> around $18&ndash;$60/m², commonly near $30/m².</li>
+          <li><strong>Standard 3-bedroom interior:</strong> $4,500&ndash;$9,000 (walls, ceilings, doors, skirting, architraves).</li>
+          <li><strong>Whole-home repaint, larger or high-ceilinged:</strong> from $8,000 up.</li>
+          <li><strong>Ceilings only / walls only:</strong> priced per room on request.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Low-VOC paints &mdash; better for a closed-up winter home.</h3>
+        <p>
+          We use quality low- or zero-VOC interior paints as standard. They have
+          far less odour and off-gassing, which matters when you&rsquo;re living
+          in the space &mdash; particularly through a cool Hobart winter when the
+          house is shut up. Lower fumes mean faster, healthier re-occupancy for
+          kids, asthma sufferers and anyone sensitive to paint smell.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pre-1970 home? Lead-safe matters indoors too.</h3>
+        <p>
+          If you&rsquo;re in an older Sandy Bay, Battery Point or New Town home,
+          the existing interior paint may be lead-based. Sanding old painted trim
+          and doors can release lead dust into the room. We follow AS 4361.2
+          lead-safe practice indoors &mdash; dust control, containment and clean
+          collection &mdash; so your family isn&rsquo;t exposed. More on that on
+          our <a href="/services/heritage-painting/">heritage &amp; weatherboard
+          painting</a> page.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners on prep.</h3>
+        <p>
+          A wall painted over cracks, flaking patches or an unsealed stain looks
+          fine for a fortnight and then tells on you. Filling, sanding and
+          spot-priming is what gives a flat, durable, professional finish that
+          still looks good in five years. We&rsquo;d rather spend the extra hour
+          preparing than hand back a room that needs touching up by spring.
+        </p>
+
+        <p style="margin-top: 1.5rem;">
+          Painting the outside too? See our <a href="/services/exterior-painting/">exterior
+          house painting</a> service, or check your suburb &mdash; we paint right
+          across <a href="/hobart-region/">Greater Hobart</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/sandy-bay/">Sandy Bay</a>
+        <a class="area-pill" href="/glenorchy/">Glenorchy</a>
+        <a class="area-pill" href="/kingston/">Kingston</a>
+        <a class="area-pill" href="/moonah/">Moonah</a>
+        <a class="area-pill" href="/new-town/">New Town</a>
+        <a class="area-pill" href="/hobart-region/">All Greater Hobart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a free interior painting quote.</h2>
+        <p>Fixed price, low-VOC paints, neat finish, furniture and floors protected.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

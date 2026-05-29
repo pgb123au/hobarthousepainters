@@ -1,0 +1,160 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does exterior house painting cost in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide, a single-storey 3-bedroom home costs roughly $9,000–$16,000 and a double-storey or weatherboard home $12,000–$20,000+, with exterior work generally $25–$60 per square metre. Weatherboard sits at the higher end because of the preparation it needs, and double-storey adds scaffold or EWP hire and slower, safer work at height. The big driver isn't the paint — around 75–85% of the cost is preparation, application and clean-up. We quote a fixed itemised price after inspecting the property and its access." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a weatherboard exterior cost more to paint?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because weatherboard is almost all preparation. Old timber needs scraping and sanding of failed coatings, gap-filling and re-puttying, replacement or treatment of any rotten boards, and priming of every bare patch before a topcoat goes on. On a typical greater-Hobart weatherboard repaint, around seven of ten days on site are preparation. Skip that and the new paint peels within a couple of winters. The boards, gaps, fascias, eaves and window frames also mean a lot of slow brushwork rather than fast rolling." }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the best time of year to paint outside in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The drier, milder stretches — late spring through autumn — are ideal, but a well-run crew paints exteriors across much of the year by working with the forecast. The hard rules don't change: we don't apply coatings onto damp surfaces, in the rain, or when rain is coming before the paint can cure, and we avoid coating in very cold or heavy-dew conditions. Hobart's cool, damp climate means timing each elevation to the weather, which is part of why we schedule realistically rather than promising a fixed date in a wet week." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle the scaffolding and work safely at height?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. For double-storey homes and difficult access we use scaffold or an elevating work platform (EWP) and work to WorkSafe Tasmania fall-protection requirements. Scaffolding from which a person could fall more than 4 metres is high-risk work and is erected and used accordingly. Safe access at height isn't optional — it protects our crew and your property, and it lets us prep and coat the high elevations properly rather than rushing off a ladder." }
+    }
+  ]
+};
+---
+<Layout
+  title="Exterior House Painting Hobart | Weatherboard Specialists"
+  description="Exterior house painting across Hobart — weatherboard, render and brick. Cold-climate prep, mould treatment, primed bare timber, paints rated for damp maritime weather. Free fixed quote."
+  canonical="https://hobarthousepainters.com.au/services/exterior-painting/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Weatherboard &middot; render &middot; brick &middot; cold-climate prep</span>
+      <h1>Exterior house painting across <span class="accent">Hobart</span>.</h1>
+      <p class="hero-sub">
+        Weatherboard, render and brick exteriors prepared and recoated to handle
+        Hobart&rsquo;s cold, damp maritime climate and the salt air off the
+        Derwent. Wash, mould treatment, sand, fill, prime, then quality paints
+        rated for cool damp conditions. A single-storey home runs roughly
+        $9,000&ndash;$16,000; weatherboard and double-storey $12,000&ndash;$20,000+.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How we approach a Hobart exterior.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Preparation is the job &mdash; the topcoat is the easy part.</h3>
+        <p>
+          On a Hobart exterior, roughly <strong>75&ndash;85% of the work</strong>
+          is preparation, application technique and clean-up, not the paint
+          itself. On a weatherboard repaint that often means around
+          <strong>seven of ten days on site spent preparing</strong> before a
+          drop of finish goes on. That is the difference between a coat that
+          lasts a decade and one that peels through the second winter.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Our exterior process.</h3>
+        <ol>
+          <li><strong>Wash down.</strong> Strip dirt, chalking, salt and grime so the new coating bonds to a clean surface, not to muck.</li>
+          <li><strong>Treat mould and mildew.</strong> The damp Hobart climate breeds mould on shaded and southern elevations &mdash; we kill it, not paint over it, or it grows straight back through the new coat.</li>
+          <li><strong>Scrape and sand.</strong> Remove failed and flaking coatings back to a sound edge. On pre-1970 homes this is done lead-safe under AS 4361.2.</li>
+          <li><strong>Fill, putty and repair.</strong> Gap-fill weatherboard joints, re-putty window glazing, fill cracks in render, and treat or replace rotten timber and fascia.</li>
+          <li><strong>Prime bare timber and patches.</strong> Every bare board, repair and chalky render patch is primed so the topcoat has something to grip.</li>
+          <li><strong>Topcoat.</strong> Quality exterior paints rated for cool, damp conditions, the correct number of coats, applied to AS/NZS 2311 &mdash; never onto a damp surface or ahead of rain.</li>
+          <li><strong>Clean up.</strong> Gardens, paths, windows and site left clean, rubbish removed, and a walk-round sign-off with you.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Built for the cold, damp maritime climate.</h3>
+        <p>
+          Hobart&rsquo;s long cool wet stretches keep timber and render damp and
+          feed mould, while salt air off the Derwent adds a corrosion load. That
+          shortens the repaint cycle &mdash; most exteriors here want recoating
+          every <strong>7&ndash;10 years</strong>, sooner on exposed southern and
+          waterfront walls. We choose paints suited to the conditions, time each
+          elevation to the forecast, and never coat damp surfaces &mdash; so the
+          film actually cures and lasts.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Working safely at height (WorkSafe Tasmania).</h3>
+        <p>
+          Double-storey homes and steep sites need scaffold or an elevating work
+          platform (EWP), set up and used to <strong>WorkSafe Tasmania</strong>
+          fall-protection requirements. Scaffolding from which a person could
+          fall more than four metres is high-risk work and is treated as such.
+          Safe access also means we can <em>prepare and coat</em> the high
+          elevations properly rather than skimping off a ladder &mdash; you get a
+          better finish up top, not just a safer site.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2026 Hobart exterior price bands.</h3>
+        <ul>
+          <li><strong>Single-storey 3-bedroom:</strong> $9,000&ndash;$16,000.</li>
+          <li><strong>Double-storey or weatherboard:</strong> $12,000&ndash;$20,000+ (scaffold/EWP and heavy prep included).</li>
+          <li><strong>Per square metre:</strong> roughly $25&ndash;$60/m² depending on substrate, condition and access.</li>
+          <li><strong>Render / brick (sound surface):</strong> generally lower per m² than failing weatherboard.</li>
+          <li><strong>Trim, eaves, fascia &amp; gutters only:</strong> priced separately on request.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          The cheapest exterior quote is almost always the one that skips
+          preparation &mdash; a quick wash and two coats over flaking timber. It
+          looks great on handover and fails fast in this climate. We&rsquo;d
+          rather give you an honest fixed price that includes the prep the job
+          actually needs, so you&rsquo;re repainting in a decade, not in two
+          winters.
+        </p>
+
+        <p style="margin-top: 1.5rem;">
+          Got a heritage or weatherboard home? See <a href="/services/heritage-painting/">heritage
+          &amp; weatherboard painting</a>. Roof looking tired too? We also do
+          <a href="/services/roof-painting/">roof painting &amp; coating</a>, right
+          across <a href="/hobart-region/">Greater Hobart</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/sandy-bay/">Sandy Bay</a>
+        <a class="area-pill" href="/glenorchy/">Glenorchy</a>
+        <a class="area-pill" href="/kingston/">Kingston</a>
+        <a class="area-pill" href="/moonah/">Moonah</a>
+        <a class="area-pill" href="/new-town/">New Town</a>
+        <a class="area-pill" href="/hobart-region/">All Greater Hobart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a free exterior painting quote.</h2>
+        <p>Weatherboard, render or brick. Proper cold-climate prep, paints built for the conditions, fixed price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
