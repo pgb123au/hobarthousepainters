@@ -1,0 +1,281 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does the paint job last?", "acceptedAnswer": {"@type": "Answer", "text": "Interior premium 2-coat: 8–12 years before next major. Exterior render: 8–10 years. Exterior weatherboard: 6–8."}}, {"@type": "Question", "name": "Are you licensed?", "acceptedAnswer": {"@type": "Answer", "text": "Painting in AU doesn't need a state licence per se, but we hold full public liability and WorkSafe coverage for our crew. Verifiable on request."}}, {"@type": "Question", "name": "Do you supply paint?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — trade pricing through Dulux / Wattyl / Taubmans / Haymes accounts. You can supply your own if you prefer (you wear warranty)."}}, {"@type": "Question", "name": "Will you do the prep properly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — itemised on every quote: pressure clean, fill, sand, prime. We refuse to paint over peeling without prep."}}, {"@type": "Question", "name": "Can I be in the house during interior?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we use low-VOC products and tape off completed rooms. Each room takes 1-2 days; we'd do one wing at a time."}}, {"@type": "Question", "name": "Lead paint — what's the process?", "acceptedAnswer": {"@type": "Answer", "text": "Pre-1970 homes: 30-min swab test ($150) before quoting. If positive: encapsulate or strip-and-dispose (HEPA + tarped). WorkSafe-supervised."}}, {"@type": "Question", "name": "What's the warranty?", "acceptedAnswer": {"@type": "Answer", "text": "10-year paint system warranty on exterior (manufacturer); 5-year workmanship warranty (us). Conditional on doing the prep properly."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "House painting", "provider": {"@type": "Painter", "name": "Hobart House Painters", "telephone": "+61485939966", "url": "https://hobarthousepainters.com.au", "areaServed": {"@type": "City", "name": "Hobart"}}, "areaServed": "Hobart", "url": "https://hobarthousepainters.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "15"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hobarthousepainters.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://hobarthousepainters.com.au/pricing/"}]};
+---
+<Layout
+  title="House painter pricing in Hobart — 2026 interior + exterior guide | 0485 939 966"
+  description="House painter prices in Hobart — interior + exterior, prep done properly, 10-year warranty. 2026 rates. Call 0485 939 966 for a site quote."
+  canonical="https://hobarthousepainters.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">10-year system warranty, prep done properly</span>
+      <h1>House painter pricing in Hobart — 2026 interior + exterior guide</h1>
+      <p class="hero-sub">House painting in Hobart sits between $1,200 (one-room interior repaint) and $18,000+ (full exterior on a two-storey weatherboard). The big cost is prep — sanding, priming, gap-filling, lead-paint testing on pre-1970 homes — and the cheap end of the market is where prep gets skipped.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61485939966" aria-label="Call 0485 939 966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are realistic 2026 rates for the most common Hobart jobs. Quotes are per-room or per-sqm of wall area, with itemised prep work. Call 0485 939 966 for a site-specific quote.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for house painting in Hobart</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Interior — single room (3x4m, walls only)</strong></td>
+              <td data-label="Price"><span class="price-range">$650 – $1,200</span></td>
+              <td data-label="Note">Includes prep, two coats premium paint, doors and skirting touch-up.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior — single room (walls + ceiling + trim)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,200 – $2,200</span></td>
+              <td data-label="Note">Full repaint including cornice, doors, frames, skirting.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior — whole home (3BR, walls only)</strong></td>
+              <td data-label="Price"><span class="price-range">$4,500 – $7,500</span></td>
+              <td data-label="Note">All living + sleeping areas. Two coats premium acrylic.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior — whole home (3BR, walls + trim)</strong></td>
+              <td data-label="Price"><span class="price-range">$6,500 – $11,500</span></td>
+              <td data-label="Note">Walls, ceilings, all trim, doors. Most popular package.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Interior — whole home (4BR / two-storey, full)</strong></td>
+              <td data-label="Price"><span class="price-range">$9,500 – $16,500</span></td>
+              <td data-label="Note">Larger floor area + double-storey access.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Exterior — single-storey weatherboard (typical)</strong></td>
+              <td data-label="Price"><span class="price-range">$8,500 – $14,500</span></td>
+              <td data-label="Note">Pressure clean, prep, prime, 2 coats. Includes eaves + facias.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Exterior — two-storey weatherboard (typical)</strong></td>
+              <td data-label="Price"><span class="price-range">$14,500 – $24,500</span></td>
+              <td data-label="Note">Adds scaffold + safety setup.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Exterior — rendered home (single-storey)</strong></td>
+              <td data-label="Price"><span class="price-range">$6,500 – $11,500</span></td>
+              <td data-label="Note">Render typically holds paint longer than weatherboard.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Exterior — fibro / Hardiplank</strong></td>
+              <td data-label="Price"><span class="price-range">$7,500 – $13,500</span></td>
+              <td data-label="Note">Similar to weatherboard prep.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Per-sqm exterior wall (fitted)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $85 per sqm</span></td>
+              <td data-label="Note">On larger jobs.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Heritage prep — lead paint test (per home)</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $480</span></td>
+              <td data-label="Note">Mandatory on pre-1970 homes. WorkSafe rules.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Heritage prep — lead paint removal</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $95 per sqm</span></td>
+              <td data-label="Note">Encapsulation or strip-and-dispose.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Roof painting (re-coat only)</strong></td>
+              <td data-label="Price"><span class="price-range">$3,500 – $7,500</span></td>
+              <td data-label="Note">Pressure clean + 3-coat acrylic. NOT a substitute for restoration.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Deck restoration (sand + oil/stain)</strong></td>
+              <td data-label="Price"><span class="price-range">$25 – $55 per sqm</span></td>
+              <td data-label="Note">Full sand + 2-3 coats of oil.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Fence painting (Colorbond or paling)</strong></td>
+              <td data-label="Price"><span class="price-range">$15 – $35 per linear m</span></td>
+              <td data-label="Note">Mostly on heritage palings.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for Hobart in 2026. Final quote depends on your site — call 0485 939 966 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61485939966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Prep work — the difference between a 3-year and a 12-year paint job. Skipping prep is the cheap-end trick.</li>
+          <li>Substrate — render holds paint longest (8–10 years), weatherboard mid (6–8), fibro lowest (5–7).</li>
+          <li>Heritage rules — pre-1970 homes need lead paint testing before any sanding work.</li>
+          <li>Colour change — a 'dark to light' or 'light to dark' colour change adds 1 extra coat ($800–$1,500).</li>
+          <li>Access — second-storey, steep eaves, asbestos sites all add labour + safety setup.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>Quotes that skip the prep itemisation — paint over crap = peeling in 18 months.</li>
+          <li>Pre-1970 homes without a lead-paint test — WorkSafe-illegal to sand without one.</li>
+          <li>'Single coat' specials — never sufficient; always 2 coats minimum + primer on bare areas.</li>
+          <li>Cheap-end paints (sub-$80/4L) — cover less per litre and fade faster.</li>
+          <li>Cash painters without licence or insurance — uninsurable if they fall.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call 0485 939 966 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Number of rooms / approximate sqm of wall area.</li>
+          <li>Photos of the worst trouble spots.</li>
+          <li>Substrate type (weatherboard, render, brick, fibro).</li>
+          <li>Approximate decade the home was built (lead test trigger).</li>
+          <li>Colour scheme if decided.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>How long does the paint job last?</strong></summary>
+          <div class="faq-a">Interior premium 2-coat: 8–12 years before next major. Exterior render: 8–10 years. Exterior weatherboard: 6–8.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Are you licensed?</strong></summary>
+          <div class="faq-a">Painting in AU doesn't need a state licence per se, but we hold full public liability and WorkSafe coverage for our crew. Verifiable on request.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Do you supply paint?</strong></summary>
+          <div class="faq-a">Yes — trade pricing through Dulux / Wattyl / Taubmans / Haymes accounts. You can supply your own if you prefer (you wear warranty).</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Will you do the prep properly?</strong></summary>
+          <div class="faq-a">Yes — itemised on every quote: pressure clean, fill, sand, prime. We refuse to paint over peeling without prep.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Can I be in the house during interior?</strong></summary>
+          <div class="faq-a">Yes — we use low-VOC products and tape off completed rooms. Each room takes 1-2 days; we'd do one wing at a time.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Lead paint — what's the process?</strong></summary>
+          <div class="faq-a">Pre-1970 homes: 30-min swab test ($150) before quoting. If positive: encapsulate or strip-and-dispose (HEPA + tarped). WorkSafe-supervised.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>What's the warranty?</strong></summary>
+          <div class="faq-a">10-year paint system warranty on exterior (manufacturer); 5-year workmanship warranty (us). Conditional on doing the prep properly.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Hobart job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61485939966" aria-label="Call 0485 939 966">&#9742; Call 0485 939 966</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>
