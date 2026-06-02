@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often does a weatherboard house in Hobart need repainting?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On older Hobart weatherboard — Battery Point, West Hobart, North Hobart — plan on a full repaint every 8 to 12 years. The cold, damp maritime air keeps timber moving and pulls moisture into any failed joint. South and east elevations facing the Derwent get the worst of it. A west wall in full afternoon sun can chalk and fade inside the same decade. We tell people that the timer starts when you see the first end-grain crack on a board, not when the colour fades." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Colorbond actually last between repaints in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Genuine Colorbond on a Hobart roof or fence will go 20 to 25 years before it really needs recoating, sometimes longer in less exposed pockets like Lenah Valley or New Town. The conditioned-polyester coating is built for Australian UV, which is the dominant ageing factor everywhere outside the salt-spray fringe. Hobart's UV index is lower than mainland averages, so Colorbond ages slowly here. The trade-off is mildew and lichen on the shaded southern faces — that's a wash issue, not a paint issue." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the chalk test and can I do it myself?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — anyone can do it. Take a clean, slightly damp dark cloth and rub firmly over a sun-exposed section of paint on a dry day. If it comes away with a heavy chalky residue, the binder in the topcoat is failing and you are inside the repaint window. Light chalking is normal after eight years. Heavy chalking on a north or west elevation usually means you have one to two summers before the substrate starts to show real wear. The chalk test is more reliable than judging by colour fade alone, because UV bleaches pigment well before the film fails." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Hobart's damp climate really change repaint timing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It does, but not the way most people think. Hobart's overnight dew points sit close to surface temperature for most of autumn and winter, so condensation reforms on freshly painted exteriors hours after the sun goes off them. That means application windows are narrower than mainland cities, and any cut-corner job that goes on a cold damp surface will fail in three or four years instead of ten. Climate doesn't shorten the life of a good paint job — it shortens the life of a rushed one. Substrate prep and dew-point timing matter more here than the brand of paint." }
+    }
+  ]
+};
+---
+<Layout
+  title="Exterior repaint frequency in Hobart — by substrate"
+  description="How often you should repaint a Hobart exterior by substrate: weatherboard 8-12 years, render 12-15, Colorbond 20-25. The chalk test, UV exposure on each elevation, and when prep matters more than paint."
+  canonical="https://hobarthousepainters.com.au/exterior-repaint-frequency-hobart/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Exterior repaint cycle &middot; Hobart substrates</span>
+      <h1>Exterior repaint frequency in <span class="accent">Hobart</span> — by substrate.</h1>
+      <p class="hero-sub">
+        The question we get most from homeowners across Sandy Bay, West Hobart
+        and Lindisfarne is the same: <em>how long is my paint actually meant to
+        last?</em> The honest answer is, it depends entirely on what's
+        underneath. Colorbond, render and old weatherboard live on completely
+        different clocks. Here's how we read them.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The four substrates and their honest service life.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Colorbond and pre-painted steel — 20-25 years.</h3>
+        <p>
+          A genuine Colorbond exterior in Hobart will outlast the warranty on
+          most of the timber it's screwed to. The conditioned-polyester topcoat
+          is engineered for Australian UV, and Hobart's UV index sits well below
+          Brisbane or Perth, so the pigment-fade clock runs slow. We see 1990s
+          Colorbond fences in Glenorchy that still hold colour. What ages
+          Colorbond fastest in Hobart isn't sun — it's mildew on the shaded
+          southern face and salt deposit on the eastern shore properties. A
+          high-pressure wash, not a repaint, is usually the right answer for the
+          first 15 years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Render and cement sheet — 12-15 years.</h3>
+        <p>
+          A properly bedded acrylic-render coat in Sandy Bay or Kingston should
+          give you 12 to 15 years before the film genuinely fails. The wildcard
+          is hairline cracking. Hobart's diurnal temperature swing — overnight
+          lows pulling render down to single digits, then a warm midday sun
+          opening it back up — fatigues the surface coat earlier on south-facing
+          walls. Once you see cracks wider than the thickness of a business
+          card, water is getting behind the film and you're past the chalk-out
+          repaint and into a repair-and-recoat job.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Weatherboard — 8-12 years.</h3>
+        <p>
+          This is the big one in Hobart. The older inner-suburb stock — Battery
+          Point, West Hobart, North Hobart, parts of New Town — is heavy in
+          painted weatherboard, much of it predating 1970. Timber moves with
+          moisture, and Hobart's moisture is relentless. Eight years is a
+          conservative figure for a south or east elevation taking the worst of
+          the maritime damp. Twelve years is realistic on a sheltered northern
+          wall under a wide eave. The failure mode isn't fade — it's end-grain
+          splitting at the board ends, and once that opens, water tracks behind
+          the film and lifts it from the substrate.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Roof tile (Wunderlich, terracotta) — variable.</h3>
+        <p>
+          Tile roof painting is a different conversation from a wall repaint —
+          a re-coat on a sound tile roof buys 8-10 years if the pointing and
+          bedding underneath are solid. If they're not, you've painted over
+          the actual problem.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Why Hobart's climate is the deciding factor.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Hobart has the lowest UV exposure of any Australian capital and one of
+          the coolest summer maximums — usually capping around 23°C — and that's
+          gentle on pigment. But it also has high relative humidity and low
+          mean overnight temperatures, which means dew point sits close to
+          surface temperature for nine months of the year. AS/NZS 2311 — the
+          painting code we work to — explicitly tells you not to apply paint
+          when the substrate is within 3°C of dew point, because the film will
+          not cure properly. Plenty of cheap jobs in Hobart get applied late in
+          the afternoon in May. Three years later the film is failing.
+        </p>
+        <p>
+          Mildew and lichen also love the shaded southern faces of Hobart
+          homes — anywhere a wall doesn't get direct sun for more than three
+          hours a day in winter. We see homes in Battery Point and Mount Stuart
+          where the north wall is fine at twelve years and the south wall is
+          biological within five. That's a wash-and-treat job before recoat,
+          not a paint failure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>When prep matters more than paint.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Here's the truth most painters won't tell you: on a Hobart exterior,
+          the brand of paint contributes maybe 20% of the lifespan of the job.
+          The other 80% is in the preparation. A premium acrylic over a poorly
+          washed, poorly primed weatherboard wall in West Hobart will fail in
+          four years. A standard exterior acrylic over a properly bleached,
+          sound-tested, primed and back-puttied wall will hold for twelve.
+        </p>
+        <p>
+          What that looks like on a quote: high-pressure wash with a mildewcide
+          rinse, full scrape-back of any loose film to sound substrate, spot
+          prime on bare timber with an oil-based binding primer, full re-putty
+          of nail-set holes and joint splits, and only then the topcoat. If
+          you're being quoted a "two-coat repaint" with no wash line item and
+          no primer line item, you're being quoted a cosmetic re-coat, and the
+          clock you're buying back is half what you think.
+        </p>
+        <p>
+          We work to AS/NZS 2311 across every exterior we touch, and on
+          pre-1970 homes the AS 4361.2 lead-paint management standard sits on
+          top of that — which changes how we sand, contain and dispose of the
+          old paint. About 60% of Hobart's inner stock is pre-1970, so this
+          comes up on most quotes through Sandy Bay, Battery Point, West Hobart
+          and North Hobart.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Common questions about repaint timing in Hobart.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>How often does a weatherboard house in Hobart need repainting?</h3>
+        <p>
+          On older Hobart weatherboard — Battery Point, West Hobart, North
+          Hobart — plan on a full repaint every 8 to 12 years. The cold, damp
+          maritime air keeps timber moving and pulls moisture into any failed
+          joint. South and east elevations facing the Derwent get the worst of
+          it. A west wall in full afternoon sun can chalk and fade inside the
+          same decade. The timer starts when you see the first end-grain crack
+          on a board, not when the colour fades.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">How long does Colorbond actually last between repaints in Hobart?</h3>
+        <p>
+          Genuine Colorbond on a Hobart roof or fence will go 20 to 25 years
+          before it really needs recoating. The conditioned-polyester coating is
+          built for Australian UV, which is the dominant ageing factor outside
+          salt-spray zones. Hobart's UV index is lower than mainland averages,
+          so Colorbond ages slowly here. The trade-off is mildew and lichen on
+          the shaded southern faces — that's a wash issue, not a paint issue.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What's the chalk test and can I do it myself?</h3>
+        <p>
+          Anyone can do it. Take a clean, slightly damp dark cloth and rub
+          firmly over a sun-exposed section of paint on a dry day. If it comes
+          away with a heavy chalky residue, the binder in the topcoat is failing
+          and you are inside the repaint window. Light chalking is normal after
+          eight years. Heavy chalking on a north or west elevation usually means
+          one to two summers before the substrate starts to show real wear.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Does Hobart's damp climate really change repaint timing?</h3>
+        <p>
+          It does, but not the way most people think. Hobart's overnight dew
+          points sit close to surface temperature for most of autumn and winter,
+          so condensation reforms on freshly painted exteriors hours after the
+          sun goes off them. Application windows are narrower than mainland
+          cities. Climate doesn't shorten the life of a good paint job — it
+          shortens the life of a rushed one. Substrate prep and dew-point
+          timing matter more here than the brand of paint.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Want a substrate-by-substrate read on your own home?</h2>
+      <p style="max-width: 45rem; margin: 1rem auto;">
+        We'll walk each elevation, do the chalk test on the worst-exposed wall,
+        and tell you straight whether you're inside the window or have another
+        couple of years up your sleeve. Free quote, registered with Consumer
+        Building and Occupational Services, Master Painters Tasmania member.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="ph-cta btn btn-primary" href="/quote/"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email quotes@hobarthousepainters.com.au</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

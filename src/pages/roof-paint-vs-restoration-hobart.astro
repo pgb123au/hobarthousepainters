@@ -1,0 +1,262 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between a roof paint and a roof restoration in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A roof paint is just the topcoat — clean, prime, coat. A roof restoration includes the structural work that sits underneath: re-bedding any loose ridge capping, re-pointing the entire ridge and hip line with flexible pointing compound, replacing broken or shattered tiles, and only then doing the wash-prime-coat sequence. On a Hobart tile roof — most often Wunderlich concrete or terracotta on 1950s-1980s housing stock — the bedding and pointing under the ridge caps are usually the actual problem. A paint job over failed pointing buys you two to three years of looking nice before water finds its way through the joints. A restoration buys you 10-15." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I tell if I need a restoration rather than just a paint?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three checks. First, walk the perimeter and look up at the ridge line — if you can see any pointing cracked, missing or sitting proud of the cap, the ridge work is overdue and a topcoat alone won't fix it. Second, check for any displaced or broken tiles in the field; one obvious break usually means three or four less obvious ones. Third, get into the roof space on a wet day with a torch and look for any active drip or stain — a water mark on a rafter under the ridge line is a definitive restoration call. We do this as a 32-point inspection at quote stage and write up which path is appropriate for your roof." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a 'paint your roof for $X' quote leave out in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Almost always the bedding and pointing inspection, the broken-tile replacement allowance, and the workmanship warranty on the structural elements. A low-headline-price roof paint quote in Hobart typically covers a wash and a single colour topcoat sprayed on, with no allowance for the actual roof condition underneath. That's fine if the pointing is genuinely sound, but on a 30-40 year old tile roof in Glenorchy, Moonah or Lindisfarne it almost never is. Hobart's freeze-thaw cycle — overnight lows that push roof surface temperature below zero on clear winter nights — accelerates rigid-mortar pointing failure compared to mainland cities. Always check the quote line items." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the warranty difference between roof paint and roof restoration?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Manufacturer system warranties on roof coatings (Dulux Acratex, Astec, Nutech) require the substrate to be sound — that's a defined condition in the warranty terms. If the pointing fails after the paint goes on, the manufacturer warranty doesn't cover the resulting paint failure, because the cause sits below the coating. A roof paint alone might carry a 5-year workmanship warranty from the installer but the manufacturer system warranty isn't engaged. A full restoration with flexible pointing and replaced tiles gets you a manufacturer-backed 10-year system warranty on top of the workmanship warranty, because the substrate is now defined-sound. The dollar difference between the two jobs is mostly the difference between buying yourself five years and buying yourself fifteen." }
+    }
+  ]
+};
+---
+<Layout
+  title="Roof paint vs roof restoration in Hobart — different jobs"
+  description="Why a re-coat without re-point is cosmetic on a Hobart tile roof. When a true restoration is mandatory, what a cheap roof-paint quote leaves out, and the system-warranty difference."
+  canonical="https://hobarthousepainters.com.au/roof-paint-vs-restoration-hobart/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Tile roof &middot; bedding + pointing &middot; system warranty</span>
+      <h1>Roof paint vs roof restoration in <span class="accent">Hobart</span> — different jobs.</h1>
+      <p class="hero-sub">
+        A roof paint and a roof restoration aren't two prices for the same job.
+        They're two different jobs that look identical for the first six months.
+        On a Hobart tile roof — most of the post-war housing stock through
+        Glenorchy, Moonah, Lindisfarne and the eastern shore — the difference
+        between them is whether you buy three years or fifteen. Here's how to
+        tell what your roof actually needs.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What each job actually involves.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>The roof paint — what's in the can and on the roof.</h3>
+        <p>
+          A roof paint is a three-stage cosmetic job. Stage one: high-pressure
+          wash to remove mildew, moss and chalked-off pigment from the previous
+          coat. Stage two: a primer sealer to bind down any remaining oxidised
+          surface. Stage three: a two-coat acrylic membrane topcoat — usually
+          Dulux Acratex, Astec or Nutech depending on the colour selection.
+          That's the entire job. There's no structural work, no replacement,
+          and no addressing of what's under the tiles.
+        </p>
+        <p>
+          Done well, a roof paint will hold colour for 8-10 years on a sound
+          Hobart tile roof. Done over failed pointing or broken tiles, the
+          coating fails locally where water tracks through joints, and you see
+          dark wet patches reappearing within two summers.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The roof restoration — structural plus cosmetic.</h3>
+        <p>
+          A full restoration adds three or four stages before the paint job
+          even starts. First, full inspection of the ridge line and hip
+          capping — every cap is checked for movement, every pointing run for
+          cracking, every tile for hairline fracture. Second, broken tiles are
+          replaced from salvage stock or matched-profile new stock. Third,
+          loose ridge caps are re-bedded with a fresh mortar bed. Fourth, the
+          entire ridge and hip pointing is removed and replaced with flexible
+          pointing compound — a polymer-modified product that moves with the
+          building rather than cracking when it gets cold. Only then does the
+          wash-prime-coat sequence run.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Why Hobart's climate makes the pointing question critical.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Hobart sits at the southernmost point of any mainland Australian
+          city and gets a winter freeze-thaw cycle that Sydney and Brisbane
+          don't. On a clear winter night with a sky-temperature reading well
+          below ambient air, roof surface temperature can drop below zero
+          even when air temperature is sitting at 3-4°C. That's normal for
+          July and August across Hobart, the eastern shore and especially the
+          higher suburbs — South Hobart, Mount Stuart, parts of West Hobart.
+        </p>
+        <p>
+          Rigid mortar pointing — the traditional cement-sand-oxide mix that
+          went on every Hobart tile roof built before 1990 — does not handle
+          freeze-thaw. Each cycle of freezing water expanding inside hairline
+          cracks slowly opens the cracks wider. Twenty cycles per winter, over
+          thirty years, and the pointing is structurally finished. You can
+          paint over the top of it and from ground level it looks beautiful.
+          The next winter rain finds the cracks and the roof leaks at the
+          ridge.
+        </p>
+        <p>
+          Flexible pointing — a polymer-modified mortar — moves with the
+          building and doesn't fatigue the same way. That's what every
+          restoration we do uses. It's not optional on a Hobart roof.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to read the quote line items.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The trap is the headline price. A "paint your roof from $2,800"
+          quote in the local paper is essentially always paint-only —
+          wash, prime, two coats, no structural work, no warranty engagement
+          on the substrate. On a 1970s tile roof in Moonah where the pointing
+          is at end-of-life, that's two summers of looking nice followed by
+          leaks. Always check the line items.
+        </p>
+        <p>
+          A genuine restoration quote will explicitly list: ridge cap
+          inspection and re-bedding allowance, broken tile replacement
+          allowance (usually a number-of-tiles count), flexible pointing
+          run-metres (the total ridge and hip metres being re-pointed), and
+          then the wash-prime-coat sequence. If those four line items aren't
+          on the quote, it's a paint job dressed up as a restoration.
+        </p>
+        <p>
+          One honest middle path: a hybrid quote where the painter inspects
+          the roof, identifies the pointing as sound, prices the paint-only
+          job, and explicitly states in writing that the pointing was assessed
+          as sound on inspection. That's a valid paint-only quote on the
+          right roof. The wrong roof is one where nobody actually inspected
+          the pointing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>System warranty — the real number.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Manufacturer system warranties on roof coatings (Dulux Acratex,
+          Astec, Nutech) are conditional on a defined-sound substrate. Read
+          the warranty terms and you'll find a clause specifying that the
+          underlying tile, bedding and pointing must be structurally sound
+          at application. If they're not, and the coating fails because
+          water came through a pointing joint, the manufacturer warranty
+          doesn't cover the resulting paint failure. You'd be left with the
+          installer's workmanship warranty — typically five years — and only
+          for the application defects, not the underlying cause.
+        </p>
+        <p>
+          A full restoration engages the manufacturer system warranty
+          properly. With flexible pointing and replaced tiles, the substrate
+          is now defined-sound, and you get the 10-year manufacturer system
+          warranty on top of the installer's workmanship warranty. The dollar
+          difference between paint-only and restoration on a typical Hobart
+          tile roof is usually around 40-60% extra. The warranty difference
+          is roughly three-times the protection. That's the real economics of
+          the decision.
+        </p>
+        <p>
+          We work to AS/NZS 2311 on the coating side and to the manufacturer
+          system specification on the structural side, and we lodge the
+          system warranty paperwork on every restoration so the homeowner
+          has the document in hand at completion. Registered with Consumer
+          Building and Occupational Services Tasmania, Master Painters
+          Tasmania members.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Common questions about roof paint and restoration in Hobart.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What's the difference between paint and restoration?</h3>
+        <p>
+          A roof paint is just the topcoat — clean, prime, coat. A roof
+          restoration includes the structural work underneath: re-bedding
+          loose ridge capping, re-pointing the ridge and hip line with
+          flexible compound, replacing broken tiles, and only then doing
+          wash-prime-coat. On Hobart tile roofs the bedding and pointing are
+          usually the actual problem.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">How do I tell if I need a restoration?</h3>
+        <p>
+          Three checks: walk the perimeter and look for cracked or missing
+          pointing on the ridge line; look for displaced or broken tiles in
+          the field; get into the roof space on a wet day and look for
+          active drips or water staining on rafters. One stain under the
+          ridge is a definitive restoration call.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What does a cheap roof-paint quote leave out?</h3>
+        <p>
+          Almost always the bedding and pointing inspection, the broken-tile
+          replacement allowance, and the workmanship warranty on the
+          structural elements. Hobart's freeze-thaw cycle accelerates rigid
+          mortar pointing failure compared to mainland cities — always
+          check the line items.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What's the warranty difference?</h3>
+        <p>
+          Paint-only gets you the installer's workmanship warranty (typically
+          5 years) but the manufacturer system warranty isn't engaged if the
+          substrate isn't sound. A full restoration with flexible pointing
+          gets you a manufacturer-backed 10-year system warranty plus
+          workmanship — roughly three times the protection for around
+          40-60% more upfront cost.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Want an honest read on your roof?</h2>
+      <p style="max-width: 45rem; margin: 1rem auto;">
+        We'll do a 32-point inspection at quote stage, get you onto the right
+        path — paint or full restoration — and put the rationale in writing.
+        Hobart-wide: Glenorchy, Moonah, Lindisfarne, Bellerive, Kingston, New
+        Town. AS/NZS 2311 workmanship, manufacturer-backed system warranty.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="ph-cta btn btn-primary" href="/quote/"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email quotes@hobarthousepainters.com.au</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

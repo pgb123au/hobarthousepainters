@@ -1,0 +1,231 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a planning permit to change the colour of my Hobart heritage home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on whether your property sits inside a City of Hobart heritage precinct, is individually listed under the Hobart Interim Planning Scheme, or appears on the Tasmanian Heritage Register. A like-for-like repaint in the existing colour scheme generally doesn't trigger a permit. A genuine colour change on a listed or precinct-located property usually does, and works on a Tasmanian Heritage Register place can be referred to the Heritage Council. Battery Point, parts of Sandy Bay, West Hobart and pockets of New Town are the suburbs where this comes up most. We'll flag it on the quote so you know before we start." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the City of Hobart heritage palette?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The City of Hobart and the Tasmanian Heritage Council both publish guidance on appropriate colour ranges for Georgian, Federation and weatherboard heritage homes — typically muted earth tones, soft greys, deep heritage greens and reds, and ironwork blacks. The exact palette depends on the building's period and significance. We work from period-correct schemes built around the manufacturer's heritage colour ranges (Dulux Heritage, Resene Heritage and equivalents) and where required we'll work with a conservation architect or the Council's heritage advisor to confirm the scheme before any paint goes on the wall." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a heritage colour consultation actually cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three things. First, period-correctness — matching the scheme to the era of the building (1820s Georgian sandstone in Battery Point is a very different palette to a 1900s Federation weatherboard in West Hobart). Second, planning-scheme compliance — checking the colour change against the City of Hobart heritage provisions or any specific listing conditions. Third, the trim hierarchy — main wall, fascia, fretwork, window joinery and front door each get a deliberate position in the scheme. We can do all three at the quote stage or refer to a conservation architect on a register-listed property." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I match the existing colour without a permit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — a like-for-like repaint in the existing colour scheme is generally exempt from planning requirements, even on a heritage-listed property, provided the substrate and finish remain unchanged. The trap is paint manufacturers discontinuing colours. A '1995 Heritage Red' may not exist in any current swatch. We tint-match on-site using a spectrophotometer reading off a sound section of the existing topcoat, then run a sample patch on a low-visibility elevation before committing. That keeps the work inside the existing-scheme exemption and avoids a colour drift over the life of the job." }
+    }
+  ]
+};
+---
+<Layout
+  title="Heritage colour match in Hobart — planning permit zones"
+  description="How heritage overlay zoning in Battery Point, Sandy Bay and West Hobart affects an exterior colour change. The planning permit threshold, the Council heritage palette, and how we work with conservation architects."
+  canonical="https://hobarthousepainters.com.au/heritage-colour-match-hobart/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Heritage overlay &middot; planning compliance &middot; Hobart</span>
+      <h1>Heritage colour match in <span class="accent">Hobart</span> — planning permit zones.</h1>
+      <p class="hero-sub">
+        Hobart has more pre-1900 housing stock per capita than any other
+        Australian capital. Battery Point alone is a near-complete colonial
+        streetscape. That heritage value sits inside a planning framework that
+        affects what you can and can't do with paint — and most repaint quotes
+        ignore it completely until the Council letter arrives. Here's how it
+        actually works.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The three layers of heritage protection in Hobart.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Layer 1 — the Tasmanian Heritage Register.</h3>
+        <p>
+          Individual properties on the Tasmanian Heritage Register sit under
+          the Historic Cultural Heritage Act and are managed by the Heritage
+          Council of Tasmania. There's a relatively small number across Greater
+          Hobart but they include some of the highest-value colonial buildings —
+          old warehouses around Salamanca, certain Georgian terraces in Battery
+          Point and a scattering through Sandy Bay and West Hobart. A colour
+          change on a register-listed property is generally a works application
+          to the Heritage Council, and a like-for-like is generally exempt. We
+          flag this at the quote.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Layer 2 — the City of Hobart Heritage Precincts.</h3>
+        <p>
+          The Hobart Interim Planning Scheme identifies heritage precincts
+          across Battery Point, parts of Sandy Bay, West Hobart, North Hobart
+          and New Town. If your property sits inside one of these precincts —
+          even if your individual building isn't separately listed — a colour
+          scheme change can trigger a planning permit under the scheme's
+          heritage provisions. A like-for-like repaint is exempt; a wholesale
+          colour shift from cream to dark grey on a Battery Point cottage is
+          not.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Layer 3 — listed places inside precincts.</h3>
+        <p>
+          Some properties carry both layers — a register listing and a precinct
+          location. These get the most attention from Council heritage advisors.
+          For the homeowner the practical answer is the same: we check the
+          listing before quoting, and if any consent is required we either
+          handle it ourselves or refer to a conservation architect with whom we
+          regularly work.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>What an appropriate heritage palette looks like.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The Council's heritage advice — and the conservation architects we
+          work with — converge on a fairly narrow palette per era. There's
+          flexibility within it but the principles hold. A Georgian sandstone
+          cottage in Battery Point wants muted earth tones, soft cream or stone
+          for the body, a deeper grey or black for the trim and joinery, and an
+          ironwork-black for any railings. The early Federation timber stock in
+          West Hobart and North Hobart is a different conversation again — deep
+          heritage greens and reds become appropriate, with cream or buttermilk
+          weatherboards and dark trim picking out the fretwork.
+        </p>
+        <p>
+          The trap is mid-century renderings of "heritage" colour schemes that
+          actually owe more to 1970s revival than to the period. A salmon-pink
+          weatherboard in Sandy Bay reads as heritage to a casual eye but isn't
+          period-correct for the 1890s building underneath, and on a precinct
+          property it can attract Council attention. Manufacturer heritage
+          ranges from Dulux Heritage, Resene Heritage and Haymes Period Colour
+          all contain genuinely period-appropriate options. We work from those
+          ranges as a default and only step outside them when the property's
+          existing scheme clearly justifies it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How we work with conservation architects.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          On any register-listed property, and on any precinct property where
+          the homeowner wants a substantive scheme change, we'll generally
+          recommend a conservation architect or a heritage advisor for the
+          colour consultation. The cost is usually modest against the scale of
+          the repaint and it removes any risk of the Council coming back with a
+          stop-work or a remediation order. The architect produces a colour
+          schedule — main wall, secondary wall, fascia, soffit, fretwork,
+          window joinery, front door, ironwork — which becomes the working
+          document for the painting team.
+        </p>
+        <p>
+          Where we step in directly is on the technical preparation and the
+          spec. A heritage repaint is rarely just a colour exercise. On
+          pre-1970 stock — which is most of inner Hobart, somewhere around 60%
+          of the housing — AS 4361.2 lead-paint management sits on top of
+          AS/NZS 2311 workmanship. That means containment, no dry sanding, full
+          dust capture and proper disposal of paint waste. Heritage colour and
+          lead-safe practice almost always come up together on Battery Point,
+          Sandy Bay and West Hobart jobs.
+        </p>
+        <p>
+          For people who want to manage their own consultation, the City of
+          Hobart heritage advisor offers a free pre-application service. Bring
+          a photo, an existing-scheme description and your proposed scheme; you
+          will walk out knowing whether the works are exempt, require a permit,
+          or need a referral. It's a half-hour conversation that has saved
+          plenty of Battery Point owners from very expensive remediation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Common questions about heritage colour in Hobart.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Do I need a permit to change the colour of my heritage home?</h3>
+        <p>
+          Depends on whether the property sits in a Hobart heritage precinct,
+          is individually listed under the Interim Planning Scheme, or appears
+          on the Tasmanian Heritage Register. Like-for-like repaint is
+          generally exempt; a genuine colour change on a listed or precinct
+          property usually needs a permit; register-listed works can go to the
+          Heritage Council. We flag the requirement on every heritage quote.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What's the City of Hobart heritage palette?</h3>
+        <p>
+          Council guidance points to muted earth tones, soft greys, deep
+          heritage greens and reds, and ironwork blacks — with the specific
+          palette depending on the building's period. We work from manufacturer
+          heritage ranges (Dulux Heritage, Resene Heritage) and refer to a
+          conservation architect on register-listed places.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What does a heritage colour consultation cover?</h3>
+        <p>
+          Period-correctness for the era, planning-scheme compliance against
+          the precinct provisions, and the trim hierarchy — main wall, fascia,
+          fretwork, window joinery and front door each have a deliberate place
+          in the scheme. We handle the first and last at quote stage and refer
+          out for the middle on register-listed properties.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Can I match the existing colour without a permit?</h3>
+        <p>
+          Yes — like-for-like is generally exempt even on listed property,
+          provided substrate and finish stay the same. The trap is
+          discontinued colours. We tint-match on-site using a spectrophotometer
+          off a sound section of existing topcoat, then sample-patch on a
+          low-visibility elevation before committing.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Heritage repaint in Battery Point, Sandy Bay or West Hobart?</h2>
+      <p style="max-width: 45rem; margin: 1rem auto;">
+        Tell us the property and we'll check the heritage listing and precinct
+        status before we quote. AS 4361.2 lead-safe practice on pre-1970
+        substrate, period-appropriate palettes, and a planning-scheme check
+        included as part of the quote process.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="ph-cta btn btn-primary" href="/quote/"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email quotes@hobarthousepainters.com.au</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

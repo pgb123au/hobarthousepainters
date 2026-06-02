@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's a low-VOC paint and when does it actually matter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "VOC means volatile organic compound — the solvent fraction of a paint that off-gases as the film dries. Standard interior acrylic in Australia sits around 50 grams per litre of VOC by industry standard. A low-VOC paint sits under about 5 grams per litre, and a zero-VOC under 1. It matters most for a sealed Hobart interior over the cold months when windows stay shut and ventilation drops, in nurseries and young children's bedrooms, for people with asthma or chemical sensitivity, and in homes with cats or small dogs whose respiratory systems are far smaller than ours. For a sunny living room with cross-ventilation, standard acrylic is fine." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which low-VOC paint systems do you use in Hobart?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three systems we trust on Hobart interiors: Dulux Wash&Wear +PLUS Kitchen & Bathroom and Wash&Wear Low Sheen (both under 5 g/L VOC, full premium colour range), Resene SpaceCote Low Sheen Environmental Choice (zero-VOC, Environmental Choice certified, narrower but solid colour range), and Haymes Ultra-Premium Low-VOC range (low-VOC across the full product line, made in Australia). All three carry the GreenTag, Sensitive Choice or Environmental Choice certification depending on the line. We're happy to spec any of them on a quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long until a low-VOC painted room is safe for a newborn?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On a zero-VOC system applied to a well-ventilated room in summer, the room is touch-dry in two hours and ready for use the same evening. On a low-VOC system in a Hobart winter — windows shut, heating on — we recommend 48 hours of ventilated cure before a newborn or asthma-affected occupant moves back in, with windows cracked for the first 24 hours where possible. Compare that to a standard acrylic, where any sensitive occupant should be out for 5-7 days. The advantage of low-VOC over standard isn't just lower exposure — it's a much shorter cure-and-clear window, which matters in Hobart's closed-up winter." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does going low-VOC compromise the finish or the colour range?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On the premium tier (Dulux Wash&Wear +PLUS, Haymes Ultra-Premium Low-VOC, Resene SpaceCote Low Sheen) there's effectively no compromise — coverage, washability and colour range match the standard-VOC equivalents. On the budget low-VOC tier you do see compromises: thinner film build, narrower colour range (especially in deep accent colours that depend on solvent-carried tinters), and lower scrub resistance. The honest answer is the premium low-VOC systems cost about 10-15% more than premium standard, and on a nursery or asthma-sensitive job that's a clear yes. Budget low-VOC isn't worth it." }
+    }
+  ]
+};
+---
+<Layout
+  title="Low-VOC interior paint in Hobart — newborn-safe selection"
+  description="When low-VOC interior paint genuinely matters in a Hobart home — nursery, asthma, pets — the three systems we use, off-gas cure time, and the colour-range trade-off with budget low-VOCs."
+  canonical="https://hobarthousepainters.com.au/low-voc-hobart/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Low-VOC &middot; nursery-safe &middot; Hobart winter cure</span>
+      <h1>Low-VOC interior paint in <span class="accent">Hobart</span> — newborn-safe selection.</h1>
+      <p class="hero-sub">
+        Hobart winters mean closed windows for five months. If you're repainting
+        a nursery, an asthma-affected bedroom or any room a small child or pet
+        spends time in, the off-gas profile of the paint actually matters here
+        in a way it doesn't in warmer cities with year-round ventilation. Here's
+        when low-VOC is worth the premium and when it isn't.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What VOC actually means on a paint can.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          VOC stands for volatile organic compound — the solvent fraction of a
+          paint that evaporates out of the film as it dries. It's the
+          recognisable wet-paint smell. Standard interior acrylic in Australia
+          sits at roughly 50 grams of VOC per litre. Low-VOC sits under 5 g/L.
+          Zero-VOC, technically, sits under 1 g/L. The lower the number, the
+          less solvent is released into the room over the cure window.
+        </p>
+        <p>
+          The off-gas curve isn't a cliff — it tails off over weeks. With a
+          standard acrylic, the bulk releases in the first 48-72 hours but
+          measurable VOC continues for two to three weeks. With a zero-VOC
+          system, the curve is essentially flat from day two. In a Hobart
+          interior with the heating on and the windows shut, that difference
+          becomes practical, not theoretical.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>When low-VOC genuinely matters.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Nursery and small-child bedroom.</h3>
+        <p>
+          A newborn's airway is a fraction of an adult's by volume, and their
+          time-per-day in the same enclosed room is much higher. Pediatric
+          guidance is consistent: avoid VOC exposure in sleeping rooms during
+          the first year. In Hobart that's compounded by closed windows from
+          April through September. Zero-VOC is the right answer.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Asthma and chemical sensitivity.</h3>
+        <p>
+          Existing asthma is a clear case for low-VOC. So is multiple chemical
+          sensitivity, where standard acrylic can trigger a response that
+          lingers months after the room "smells fine" to everyone else. We've
+          done jobs in Sandy Bay and Lenah Valley where the homeowner stepped
+          back into a standard-acrylic-painted room six weeks after completion
+          and reacted. Switching the spec to a Sensitive Choice or Environmental
+          Choice certified system on the next room removed the problem.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Small pets in the home.</h3>
+        <p>
+          Cats and small dogs have a fraction of the lung volume we do and a
+          much higher respiration rate, and they spend 90% of their day at
+          floor level where heavier-than-air solvents settle. The off-gas
+          profile of standard acrylic isn't acutely toxic to them, but a
+          sealed Hobart interior over winter holds enough residual VOC for
+          weeks to matter for a sensitive animal.
+        </p>
+
+        <h3 style="margin-top: 2rem;">When it doesn't matter — and we'll tell you so.</h3>
+        <p>
+          A sunny north-facing living room in Kingston that gets cross-ventilation
+          most of the year does not need a zero-VOC system on a budget-sensitive
+          job. Standard premium acrylic will be touch-dry in two hours and
+          essentially off-gassed in 72. Spending 15% more on a low-VOC product
+          for that room is a preference, not a necessity. We're happy to spec
+          standard acrylic where it makes sense and reserve the premium for the
+          rooms where it actually pays off.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The three systems we use, and the trade-offs.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          We work with three low-VOC systems on Hobart interiors and we'll spec
+          whichever matches the brief and the budget.
+        </p>
+        <p>
+          <strong>Dulux Wash&amp;Wear +PLUS Low-VOC range</strong> — under 5 g/L
+          VOC, full premium colour range, top-tier scrub resistance and stain
+          release. Sensitive Choice certified. This is the default for most of
+          our low-VOC jobs because the colour range matches whatever the
+          homeowner has in mind without compromise.
+        </p>
+        <p>
+          <strong>Resene SpaceCote Low Sheen Environmental Choice</strong> —
+          zero-VOC, Environmental Choice New Zealand certified, made in
+          Tasmania-adjacent Australian sites. Colour range is narrower than
+          Dulux but solid for body colours and softer trims. We tend to spec
+          this when the homeowner specifically wants the Environmental Choice
+          certification on the can.
+        </p>
+        <p>
+          <strong>Haymes Ultra-Premium Low-VOC range</strong> — Australian-made,
+          low-VOC across the entire line rather than as a separate sub-range,
+          with a strong heritage colour palette that pairs well with the older
+          Hobart stock. Slightly more expensive than the Dulux equivalent but
+          made closer to home.
+        </p>
+        <p>
+          Budget low-VOC systems sit beneath these three on price and beneath
+          them on performance. The colour range is narrow, film build is
+          thinner and scrub resistance drops noticeably. On a nursery, where
+          the room sees daily wiping over the next decade, that scrub-resistance
+          gap is real. We won't quote budget low-VOC for nursery work.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Cure time in Hobart's closed winter interior.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          One advantage of low-VOC that doesn't get talked about enough: the
+          re-occupancy window is much shorter. On a standard acrylic in a
+          closed Hobart bedroom in July, conservative practice is five to seven
+          days before a sensitive occupant moves back in. On a zero-VOC system
+          in the same conditions, 48 hours of light ventilation is comfortable
+          for a newborn or asthma-affected occupant. That window matters when
+          you're moving a baby into the nursery before the due date or you have
+          a guest room to turn over on a deadline.
+        </p>
+        <p>
+          We schedule low-VOC nursery work to land 5-7 days before the planned
+          occupancy where we can, run a fan-assisted ventilation cycle for the
+          first 24 hours after the topcoat, and time the final coat to early
+          morning so the room has the full afternoon of indirect heat to drive
+          the cure. AS/NZS 2311 — the workmanship standard — covers the
+          application; the cure window in a Hobart winter is a scheduling
+          decision we manage on top of that.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Common questions about low-VOC paint in Hobart.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What's a low-VOC paint and when does it actually matter?</h3>
+        <p>
+          Low-VOC means under about 5 g/L of solvent (vs ~50 for standard
+          acrylic). It matters most in sealed Hobart interiors over winter, in
+          nurseries, in asthma-affected rooms, and in homes with small pets.
+          For a sunny living room with cross-ventilation, standard acrylic is
+          fine.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Which low-VOC systems do you use in Hobart?</h3>
+        <p>
+          Dulux Wash&amp;Wear +PLUS (under 5 g/L, full colour range, Sensitive
+          Choice), Resene SpaceCote Low Sheen Environmental Choice (zero-VOC,
+          certified) and Haymes Ultra-Premium Low-VOC (Australian-made, strong
+          heritage palette).
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">How long until a low-VOC room is safe for a newborn?</h3>
+        <p>
+          48 hours of ventilated cure on a low-VOC system in a Hobart winter,
+          versus 5-7 days on a standard acrylic. The shorter re-occupancy
+          window is one of the practical benefits, not just the lower exposure.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Does going low-VOC compromise the finish?</h3>
+        <p>
+          On the premium tier (Dulux, Haymes, Resene) effectively no — coverage,
+          washability and colour range match standard. On the budget low-VOC
+          tier, yes — thinner film, narrower colour range, lower scrub
+          resistance. We don't quote budget low-VOC for nursery work.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Painting a nursery, ensuite or asthma-affected room?</h2>
+      <p style="max-width: 45rem; margin: 1rem auto;">
+        Tell us the room and the planned occupancy. We'll spec the right
+        low-VOC system, schedule for full cure inside your timeline, and run
+        the ventilation cycle properly so the room is ready when you need it.
+        AS/NZS 2311 workmanship, Master Painters Tasmania members.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="ph-cta btn btn-primary" href="/quote/"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email quotes@hobarthousepainters.com.au</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
