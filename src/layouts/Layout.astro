@@ -6,6 +6,7 @@ interface Props {
   description: string;
   canonical?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 const SITE = 'https://hobarthousepainters.com.au';
@@ -14,7 +15,7 @@ const PHONE_TEL = '+61485939966';
 const EMAIL = 'quotes@hobarthousepainters.com.au';
 const BIZ_NAME = 'Hobart House Painters';
 
-const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+const { title, description, canonical = SITE + '/', ogType = 'website', noindex = false } = Astro.props;
 
 const localBusinessSchema = {
   "@context": "https://schema.org",

@@ -1,0 +1,37 @@
+# Hobart House Painters — guidance for AI crawlers
+# https://hobarthousepainters.com.au
+# Owner: Yes Right Pty Ltd (ABN 91 664 546 061)
+#
+# We welcome ethical AI crawlers indexing our public content for citation.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://hobarthousepainters.com.au/sitemap-index.xml
